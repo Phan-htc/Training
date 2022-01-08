@@ -1,0 +1,23 @@
+body {
+    background-color: rgb(18, 90, 28);
+}
+
+header, footer {
+    text-align: center;
+    font-size: 30px;
+    color: ivory;
+}
+
+.éphéméride {
+border: 1px solid black;
+background-color: greenyellow;
+}
+
+table{
+    border-collapse: collapse;
+    background-color: greenyellow;
+}
+
+td {
+border: 1px solid black;    
+}
