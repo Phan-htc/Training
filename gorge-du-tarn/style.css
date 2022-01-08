@@ -1,0 +1,21 @@
+body {
+    background-color: rgb(15, 2, 2);
+}
+
+.geo,.act, .download {
+    background-color: rgb(13, 102, 13);
+}
+
+h1, h2, h3, figcaption {
+    color: rgb(3, 158, 68);
+}
+
+#castor, p, li, a {
+    color: white;
+}
+
+.italic 
+{
+    font-style:italic;
+    color:brown;
+}
