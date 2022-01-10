@@ -1,5 +1,10 @@
+@font-face {
+    font-family: "satisfy";
+    src: url(../Satisfy-Regular.ttf);
+}
+
 body {
-    background-color: rgb(18, 90, 28);
+    background-color: #003809;
 }
 
 header, footer {
@@ -8,16 +13,40 @@ header, footer {
     color: ivory;
 }
 
-.éphéméride {
-border: 1px solid black;
-background-color: greenyellow;
+h1 {
+    font-family: 'satisfy';
 }
 
-table{
+.éphéméride, .Température {
+    border: 1px solid black;
+    background-color: #bfecc6;
+}
+
+table {
     border-collapse: collapse;
-    background-color: greenyellow;
+    background-color: #bfecc6;
 }
 
 td {
-border: 1px solid black;    
+    border: 1px solid black;
+}
+.Tmin
+{
+background-color: #2196f3
+;
+}
+
+.Tmax
+{
+background-color: #e86464 ;
+}
+
+.Tmoy
+{
+background-color:  #7be575;
+}
+
+a
+{
+color:  #FFFF00;
 }
