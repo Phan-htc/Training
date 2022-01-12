@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Exercices sur les sélecteurs</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!--<link rel="stylesheet" href="style_corrige.css">-->
+    <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+    <header>
+    <h1>Exercices sur les sélecteurs <abbr title="Cascading Style Sheets">CSS</abbr></h1>
+    <p>Fork d'un superbe exercice de Cyril Vernier à trouver sur <a
+        href="https://codepen.io/prof_cyrilvernier/pen/cDxiJ/" target="_blank">Exercices css</a> </p>
+  </header>
+
+
+    <section id="exercice_2_1">
+        <header class="clearfix">
+            <h1>2.1</h1>
+            <section>
+                <p>Utilisez un <mark>sélecteur descendant</mark> pour appliquer les propriétés décrites 
+                    dans la feuille CSS à toutes les boîtes de cette page.</p>
+            </section>
+        </header>
+        <article class="clearfix">
+            <!-- debut de la cible -->
+
+            <div>boîte</div>
+
+            <!-- fin de la cible -->
+        </article>
+    </section>
+
+
+    <section id="exercice_2_2">
+        <header class="clearfix">
+            <h1>2.2</h1>
+            <section>
+                <p>Utilisez un <mark>sélecteur adjacent (sibling)</mark> pour appliquer une marge à gauche 
+                    de 8px à toutes les boîtes de cette page qui sont à droite d'une autre boîte.</p>
+            </section>
+        </header>
+        <article class="clearfix">
+            <!-- debut de la cible -->
+
+            <div>boîte 0</div>
+            <div>boîte 1</div>
+            <div>boîte 2</div>
+            <div>boîte 3</div>
+            <div>boîte 4</div>
+            <div>boîte 5</div>
+
+            <!-- fin de la cible -->
+        </article>
+    </section>
+
+
+    <section id="exercice_2_3">
+        <header class="clearfix">
+            <h1>2.3</h1>
+            <section>
+                <p>Utilisez un <mark>sélecteur d'enfants</mark> pour appliquer une bordure au &lt;div&gt; 
+                    parent des boîtes ci-dessous, <mark>sans se référer à sa classe .cible</mark>.</p>
+            </section>
+        </header>
+        <article class="clearfix">
+            <!-- debut de la cible -->
+
+            <div class="cible">
+                <div>boîte 0</div>
+                <div>boîte 1</div>
+                <div>boîte 2</div>
+                <div>boîte 3</div>
+                <div>boîte 4</div>
+                <div>boîte 5</div>
+            </div>
+
+            <!-- fin de la cible -->
+        </article>
+    </section>
+
+
+    <section id="exercice_2_4">
+        <header class="clearfix">
+            <h1>2.4</h1>
+            <section>
+                <p>Utilisez un <mark>sélecteur d'attribut</mark> pour changer la couleur de fond de la boîte dont 
+                    l'attribut data-link <mark>pointe vers une extension pdf</mark>.</p>
+            </section>
+        </header>
+        <article class="clearfix">
+            <!-- debut de la cible -->
+
+            <div data-link="unfichier.jpg">boîte 0</div>
+            <div data-link="unfichier.png">boîte 1</div>
+            <div data-link="unfichier.xls">boîte 2</div>
+            <div data-link="unfichier.pdf">boîte 3</div>
+            <div data-link="unfichier.doc">boîte 4</div>
+            <div data-link="unfichier.xml">boîte 5</div>
+
+            <!-- fin de la cible -->
+        </article>
+    </section>
+
+
+    <section id="exercice_2_5">
+        <header class="clearfix">
+            <h1>2.5</h1>
+            <section>
+                <p>Utilisez un <mark>sélecteur d'attribut</mark> pour changer la couleur de fond de la boîte dont 
+                    l'attribut data-link <mark>pointe vers une url http://</mark>.</p>
+            </section>
+        </header>
+        <article class="clearfix">
+            <!-- debut de la cible -->
+
+            <div data-link="unfichier.local">boîte 0</div>
+            <div data-link="http://www.cyrilvernier.net/unfichier.distant">boîte 1</div>
+            <div data-link="./unfichier.local">boîte 2</div>
+            <div data-link="../unfichier.local">boîte 3</div>
+            <div data-link="ftp://www.cyrilvernier.net/unfichier.distant">boîte 4</div>
+            <div data-link="/unfichier.local">boîte 5</div>
+
+            <!-- fin de la cible -->
+        </article>
+    </section>
+
+
+    <section id="exercice_2_6">
+        <header class="clearfix">
+            <h1>2.6</h1>
+            <section>
+                <p>Utilisez un sélecteur approprié pour changer la couleur de fond de la boîte 
+                    <mark>survolée par la souris</mark>.</p>
+            </section>
+        </header>
+        <article class="clearfix">
+            <!-- debut de la cible -->
+
+            <div>boîte 0</div>
+            <div>boîte 1</div>
+            <div>boîte 2</div>
+            <div>boîte 3</div>
+            <div>boîte 4</div>
+            <div>boîte 5</div>
+
+            <!-- fin de la cible -->
+        </article>
+    </section>
+
+
+    <section id="exercice_2_7">
+        <header class="clearfix">
+            <h1>2.7</h1>
+            <section>
+                <p>Utilisez un sélecteur approprié pour changer la couleur de fond de la boîte <mark>ciblée par
+                     <a href="#cible">ce lien</a></mark> sans se référer à son ID.</p>
+            </section>
+        </header>
+        <article class="clearfix">
+            <!-- debut de la cible -->
+
+            <div>boîte 0</div>
+            <div>boîte 1</div>
+            <div id="cible">boîte 2</div>
+            <div>boîte 3</div>
+            <div>boîte 4</div>
+            <div>boîte 5</div>
+
+            <!-- fin de la cible -->
+        </article>
+    </section>
+
+
+    <section id="exercice_2_8">
+        <header class="clearfix">
+            <h1>2.8</h1>
+            <section>
+                <p>Utilisez un sélecteur approprié pour changer <mark>la taille de l'initiale</mark> du texte de chaque boîte.</p>
+            </section>
+        </header>
+        <article class="clearfix">
+            <!-- debut de la cible -->
+
+            <div>boîte 0</div>
+            <div>boîte 1</div>
+            <div>boîte 2</div>
+            <div>boîte 3</div>
+            <div>boîte 4</div>
+            <div>boîte 5</div>
+
+            <!-- fin de la cible -->
+        </article>
+    </section>
+
+
+    <section id="exercice_2_9">
+        <header class="clearfix">
+            <h1>2.9</h1>
+            <section>
+                <p>Utilisez un sélecteur approprié pour changer la couleur de fond de la <mark>première boîte</mark>.</p>
+            </section>
+        </header>
+        <article class="clearfix">
+            <!-- debut de la cible -->
+
+            <div>boîte 0</div>
+            <div>boîte 1</div>
+            <div>boîte 2</div>
+            <div>boîte 3</div>
+            <div>boîte 4</div>
+            <div>boîte 5</div>
+
+            <!-- fin de la cible -->
+        </article>
+    </section>
+
+
+    <section id="exercice_2_10">
+        <header class="clearfix">
+            <h1>2.10</h1>
+            <section>
+                <p>Utilisez un sélecteur approprié pour changer la couleur de fond des <mark>boîtes paires</mark>.</p>
+            </section>
+        </header>
+        <article class="clearfix">
+            <!-- debut de la cible -->
+
+            <div>boîte 0</div>
+            <div>boîte 1</div>
+            <div>boîte 2</div>
+            <div>boîte 3</div>
+            <div>boîte 4</div>
+            <div>boîte 5</div>
+
+            <!-- fin de la cible -->
+        </article>
+    </section>
+
+
+    <section id="exercice_2_11">
+        <header class="clearfix">
+            <h1>2.11</h1>
+            <section>
+                <p>Utilisez un sélecteur approprié pour changer la couleur de fond <mark>d'une boîte toutes les trois boîtes</mark>.</p>
+            </section>
+        </header>
+        <article class="clearfix">
+            <!-- debut de la cible -->
+
+            <div>boîte 0</div>
+            <div>boîte 1</div>
+            <div>boîte 2</div>
+            <div>boîte 3</div>
+            <div>boîte 4</div>
+            <div>boîte 5</div>
+
+            <!-- fin de la cible -->
+        </article>
+    </section>
+
+
+    <section id="exercice_2_12">
+        <header class="clearfix">
+            <h1>2.12</h1>
+            <section>
+                <p>Utilisez un sélecteur approprié pour changer la couleur de fond <mark>des boîtes vides de contenu</mark>.</p>
+            </section>
+        </header>
+        <article class="clearfix">
+            <!-- debut de la cible -->tilisez un sélecteur approprié 
+
+            <div>boîte 0</div>
+            <div></div>
+            <div>boîte 2</div>
+            <div>boîte 3</div>
+            <div></div>
+            <div>boîte 5</div>
+
+            <!-- fin de la cible -->
+        </article>
+    </section>
+
+
+    <section id="exercice_2_13">
+        <header class="clearfix">
+            <h1>2.13</h1>
+            <section>
+                <p>Utilisez un sélecteur approprié pour changer la couleur de fond <mark>du contenu sélectionné</mark> par la souris.</p>
+            </section>
+        </header>
+        <article class="clearfix">
+            <!-- debut de la cible -->
+
+            <div>boîte 0</div>
+            <div>boîte 1</div>
+            <div>boîte 2</div>
+            <div>boîte 3</div>
+            <div>boîte 4</div>
+            <div>boîte 5</div>
+
+            <!-- fin de la cible -->
+        </article>
+    </section>
+
+
+    <section id="exercice_2_14">
+        <header class="clearfix">
+            <h1>2.14</h1>
+            <section>
+                <p>En regroupant des sélecteurs changez la couleur du titre et du premier paragraphe.</p>
+            </section>
+        </header>
+        <article class="clearfix">
+            <!-- debut de la cible -->
+
+            <h1>In girum imus nocte et consumimur igni</h1>
+            <p>Signa te, signa te tenere me tangis et angis</p>
+            <p>Roma tibi subito motibus ibit amor.</p>
+
+            <!-- fin de la cible -->
+        </article>
+    </section>
+
+
+    <section id="exercice_2_15">
+        <header class="clearfix">
+            <h1>2.15</h1>
+            <section>
+                <p>Utilisez des <mark>sélecteurs appropriés </mark> pour placer le caractère "|" en fin de chaque ligne.</p>
+            </section>
+        </header>
+        <article class="clearfix">
+            <!-- debut de la cible -->
+
+            <ul>
+                <li><a href="#">un lien</a></li>
+                <li><a href="#">un autre lien</a></li>
+                <li><a href="#">toujours un lien</a></li>
+                <li><a href="#">encore un lien</a></li>
+            </ul>
+
+            <!-- fin de la cible -->
+        </article>
+    </section>
+
+
+    <section id="exercice_2_16">
+        <header class="clearfix">
+            <h1>2.16</h1>
+            <section>
+                <p>Changer la couleur de fond de toutes les boîtes autres que la troisième.</p>
+            </section>
+        </header>
+        <article class="clearfix">
+            <!-- debut de la cible -->
+
+            <div>boîte 0</div>
+            <div>boîte 1</div>
+            <div>boîte 2</div>
+            <div>boîte 3</div>
+            <div>boîte 4</div>
+            <div>boîte 5</div>
+
+            <!-- fin de la cible -->
+        </article>
+    </section>
+
+
+
+    <section id="exercice_2_17">
+        <header class="clearfix">
+            <h1>2.17</h1>
+            <section>
+                <p>Changez la couleur de fond de toutes les <mark>boîtes impaires</mark>.</p>
+            </section>
+        </header>
+        <article class="clearfix">
+            <!-- debut de la cible -->
+
+            <div>boîte 0</div>
+            <div>boîte 1</div>
+            <div>boîte 2</div>
+            <div>boîte 3</div>
+            <div>boîte 4</div>
+            <div>boîte 5</div>
+
+            <!-- fin de la cible -->
+        </article>
+    </section>
+
+
+    <section id="exercice_2_18">
+        <header class="clearfix">
+            <h1>2.18</h1>
+            <section>
+                <p>Changez la couleur de toutes les boîtes <mark>sauf les trois premières</mark>.</p>
+            </section>
+        </header>
+        <article class="clearfix">
+            <!-- debut de la cible -->
+
+            <div>boîte 0</div>
+            <div>boîte 1</div>
+            <div>boîte 2</div>
+            <div>boîte 3</div>
+            <div>boîte 4</div>
+            <div>boîte 5</div>
+
+            <!-- fin de la cible -->
+        </article>
+    </section>
+    <section id="exercice_2_19">
+        <header class="clearfix">
+            <h1>2.19</h1>
+            <section>
+                <p>Changez la couleur des <mark>trois premières boîtes</mark>.</p>
+            </section>
+        </header>
+        <article class="clearfix">
+            <!-- debut de la cible -->
+
+            <div>boîte 0</div>
+            <div>boîte 1</div>
+            <div>boîte 2</div>
+            <div>boîte 3</div>
+            <div>boîte 4</div>
+            <div>boîte 5</div>
+
+            <!-- fin de la cible -->
+        </article>
+    </section>
+</body>
+</html>

@@ -1,0 +1,61 @@
+@import url(format.css);
+
+
+
+/* exercice 2.1 */
+
+
+div {
+  background: #eee;
+  border: solid 1px #e6e6e6;
+  display: block;
+  float: left;
+  font-size: 16px;
+  font-weight: 300;
+  height: 75px;
+  line-height: 75px;
+  text-align: center;
+  min-width: 75px;
+}
+/* exercice 2.2 */
+
+div + div 
+{
+  margin-left: 8px;
+}
+
+/* exercice 2.3 */
+
+#exercice_2_3 div
+{
+  border: solid 1px;
+  display: block;
+}
+
+/* exercice 2.4 */
+
+div[data-link*="pdf"]
+{
+  background-color: chocolate;
+}
+
+/* exercice 2.5 */
+
+div[data-link*="http://www.cyrilvernier.net/unfichier.distant"]
+{
+  background-color: cornflowerblue;
+}
+
+/* exercice 2.6 */
+
+#exercice_2_6 div:hover
+{
+  background-color: crimson;
+}
+
+/* exercice 2.7*/
+
+a
+{
+  background-color:green;
+}
