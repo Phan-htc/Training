@@ -1,0 +1,147 @@
+@import url(format.css);
+/*
+ * Votre code CSS ci-dessous
+ */
+
+/* exercice 2.1 */
+/*
+    Pour ce premier exercice, décommentez le code CSS ci-dessous et
+    remplacer votre_selecteur par ce qui répond à l'énoncé.
+*/
+
+/*
+votre_selecteur {
+  background : #eee;
+  border     : solid 1px #e6e6e6;
+  display    : block;
+  float      : left;
+  font-size  : 16px;
+  font-weight: 300;
+  height     : 75px;
+  line-height: 75px;
+  text-align : center;
+  min-width  : 75px;
+}
+*/
+
+
+/* exercice 2.1 */
+article div {
+  background : #eee;
+  border     : solid 1px #e6e6e6;
+  display    : block;
+  float      : left;
+  font-size  : 16px;
+  font-weight: 300;
+  height     : 75px;
+  line-height: 75px;
+  text-align : center;
+  min-width  : 75px;
+}
+
+/* exercice 2.2 */
+article div~div {
+  margin-left: 8px;
+}
+
+
+/* exercice 2.3 */
+#exercice_2_3 article>div {
+  border: 1px solid black;
+}
+
+/* exercice 2.4 */
+div[data-link$=".pdf"] {
+  /* Pourquoi $= ? Lisez la doc officielle :
+  https://developer.mozilla.org/fr/docs/Web/CSS/S%C3%A9lecteurs_d_attribut */
+  background-color           : olive;
+}
+
+/* exercice 2.5 */
+/* Pourquoi ^= ? Lisez la doc officielle :
+  https://developer.mozilla.org/fr/docs/Web/CSS/S%C3%A9lecteurs_d_attribut */
+article div[data-link^="http://"] {
+  background-color: olive;
+}
+
+/* exercice 2.6 */
+#exercice_2_6 article div:hover {
+  background-color: olive;
+}
+
+/* exercice 2.7 */
+#exercice_2_7 article div:nth-of-type(3) {
+  background-color: olive;
+}
+/* ou si on ne veut le mettre en évidence que après avoir cliqué sur le lien */
+#exercice_2_7 article div:target {
+  background-color: yellow;
+}
+
+/* exercice 2.8 */
+#exercice_2_8 article div::first-letter {
+  font-size: 1.5em;
+}
+
+/* exercice 2.9 */
+#exercice_2_9 article div:first-child {
+  background-color: olive;
+}
+
+/* exercice 2.10 */
+#exercice_2_10 article div:nth-child(even) {
+  background-color: green;
+}
+
+/* exercice 2.11 */
+#exercice_2_11 article div:nth-child(3n) {
+  background-color: green;
+}
+
+/* exercice 2.12 */
+#exercice_2_12 article div:empty {
+  background-color: olive;
+}
+
+/* exercice 2.13 */
+#exercice_2_13 article div::selection {
+  background-color: olive;
+}
+
+/* exercice 2.14 */
+#exercice_2_14 article h1,
+#exercice_2_14 article p:first-of-type {
+  color: olive;
+}
+
+/* exercice 2.15 */
+#exercice_2_15 li:not(:last-child)::after {
+  content: "|";
+}
+
+/* exercice 2.16 */
+#exercice_2_16 article div:not(:nth-child(3)) {
+  background-color: olive;
+}
+
+/* exercice 2.17 */
+#exercice_2_17 article div:nth-child(odd) {
+  background-color: olive;
+}
+
+/* exercice 2.18 */
+#exercice_2_18 article div:nth-child(n+4) {
+  background-color: olive;
+}
+
+/* exercice 2.19 */
+#exercice_2_19 article div:not(:nth-child(n+4)) {
+  background-color: olive;
+}
+
+/*
+On aurait aussi pu cibler avec :
+#exercice_2_19 article div:nth-child(-n+3)
+n prenant toutes les valeurs possibles de 1 à 6 (les 6 div), on obtient bien des valeurs
+de -2 à 3, les valeurs inférieures à 1 n'étant pas utilisées, ça fonctionne
+*/
