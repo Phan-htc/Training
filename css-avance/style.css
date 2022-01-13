@@ -34,14 +34,14 @@ div + div
 
 /* exercice 2.4 */
 
-div[data-link*="pdf"]
+#exercice_2_4 div[data-link*="pdf"]
 {
   background-color: chocolate;
 }
 
 /* exercice 2.5 */
 
-div[data-link*="http://www.cyrilvernier.net/unfichier.distant"]
+#exercice_2_5 div[data-link*="http://www.cyrilvernier.net/unfichier.distant"]
 {
   background-color: cornflowerblue;
 }
@@ -55,7 +55,77 @@ div[data-link*="http://www.cyrilvernier.net/unfichier.distant"]
 
 /* exercice 2.7*/
 
-a
+#exercice_2_7 div[id]
 {
   background-color:green;
+}
+
+/* exercice 2.8*/
+#exercice_2_8 div
+{
+  font-size: larger;
+}
+
+/* exercice 2.9*/
+#exercice_2_9 div:first-child
+{
+  background-color:pink;
+}
+
+/* exercice 2.10*/
+#exercice_2_10 div:nth-of-type(even)
+{
+  background-color:greenyellow;
+}
+
+/* exercice 2.11*/
+#exercice_2_11 div:nth-child(3n)
+{
+  background-color: indigo;
+}
+
+/* exercice 2.12*/
+#exercice_2_12 div:empty
+{
+  background-color:black;
+}
+
+/* exercice 2.13*/
+#exercice_2_13 div::selection
+{
+  background-color:blue;
+}
+
+/* exercice 2.14*/
+#exercice_2_14 article h1, article p:nth-of-type(1)
+{
+  color: aquamarine;
+}
+
+/* exercice 2.15*/
+#exercice_2_15 a::after
+{
+  content: "|";
+}
+
+/* exercice 2.16*/
+#exercice_2_16 div:nth-child(1)
+{
+  background-color: blueviolet; /* erreur !!! */
+}
+
+/* exercice 2.17*/
+#exercice_2_17 div:nth-of-type(even)
+{
+  background-color:greenyellow;
+}
+
+/* exercice 2.18*/
+#exercice_2_18 div
+
+
+/* exercice 2.19*/
+#exercice_2_19
+{
+
 }
