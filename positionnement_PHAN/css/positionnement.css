@@ -1,0 +1,29 @@
+body{
+    width: 500px;
+}
+h1{
+    font-weight: bold;
+    background-color: #e0e0e0;
+}
+div{
+    width: 300px;
+}
+figure{
+    position:relative;
+    float:left;
+    width:127.45px;
+    margin:0px; 
+    margin-right: 3px;
+}
+img{
+    width:99%;
+}
+figcaption{
+    font-size: x-small;
+}
+ol{
+    position:relative;
+    width: 175px;
+    float: right;
+    list-style-type: disc;
+}
