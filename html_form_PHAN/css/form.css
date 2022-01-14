@@ -1,0 +1,24 @@
+body{
+    background-color: whitesmoke;
+}
+
+h1{
+    color:navy;
+    text-decoration: underline;
+    text-align: center;
+}
+fieldset{
+    margin: 50px;
+}
+legend{
+    text-align: center;
+    font-size: larger;
+    font-weight: bold;
+}
+div, #submit, #bienvenue{
+    text-align: center;
+}
+#majeur, #bienvenue{
+    font-size: x-large;
+    color: darkred;
+}

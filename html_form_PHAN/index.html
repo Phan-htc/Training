@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/form.css">
+    <title>Formulaire</title>
+</head>
+
+<body>
+    <header>
+        <img src="img/banniere_numi.jpg" alt="Bannière de la numi">
+    </header>
+    <h1>Fiche joueur</h1>
+    <div id="majeur">
+        <p>Lors de votre inscription, vous certifiez que vous êtes majeur</p>
+    </div>
+    <form action="go" method="GET" enctype="multipart/form-data">
+        
+        <fieldset>
+            <legend>ID joueur</legend>
+            <div>
+                <label for="nom">Nom
+                    <input type="text" name="nom" id="nom">
+                </label>
+            </div>
+            <div>
+                <label for="prenom">Prénom
+                    <input type="text" name="prenom" id="prenom">
+                </label>
+            </div>
+            <div>
+                <label for="Pseudo">Pseudo
+                    <input type="text" name="pseudo" id="Pseudo">
+                </label>
+            </div>
+            <div>
+                <p>Votre sexe</p>
+                <div>
+                    <input type="radio" name="sexe" value="homme" id="homme"><label for="homme">homme</label>
+                </div>
+                <div>
+                    <input type="radio" name="sexe" value="femme" id="femme"><label for="femme">femme</label>
+                </div>            
+                <div>
+                    <input type="radio" name="sexe" value="autre" id="autre"><label for="autre">autre</label>
+                </div>
+            </div>
+            
+            
+            <div>
+                <label for="DDN">date de naissance
+                    <input type="date" max="2004-01-14" id="DDN">
+                </label>
+            </div>
+            <div>
+                <label for="img_profil">photo de profil
+                    <input type="file" id="img_profil" >
+                </label>
+            </div>
+        </fieldset>
+        
+        <fieldset>
+            <legend>sécurité</legend>
+            <div>
+                <label for="password">Mot de passe
+                    <input type="password" id="password">
+                </label>
+            </div>
+            <div>
+                <label for="password_confirm">confirmer votre mot de passe
+                    <input type="password" id="password_confirm">
+                </label>
+            </div>
+            <!-- ajouter un script pour la confirmation du mot de passe-->
+            <div>
+                <label for="mail">adresse E-mail
+                    <input type="email" id="mail">
+                </label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>équipement du joueur</legend>
+            <div>
+                <fieldset>
+                    <legend>réplique longue</legend>
+                    <div>
+                        <label for="réplique_longue" >réplique longue
+                            <input type="text" id="réplique_longue">
+                        </label>
+                    </div>
+                    <div>
+                        <label for="puissance_L">puissance réplique longue
+                            <input type="text" id="puissance_L">
+                        </label>
+                    </div>
+                    
+                    <div>
+                        <label for="img_replique_longue">photo de la réplique
+                            <input type="file" id="img_replique_longue" >
+                        </label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>réplique courte</legend>
+                    
+                    <div>
+                        <label for="réplique_courte">réplique courte
+                            <input type="text" name="réplique_courte" id="réplique_courte">
+                        </label>
+                    </div>
+                    
+                    <div>
+                        <label for="puissance_C">puissance réplique courte
+                            <input type="text" id="puissance_C">
+                        </label>
+                    </div>
+
+                    <div>
+                        <label for="img_replique_courte">photo de la réplique
+                            <input type="file" id="img_replique_courte" >
+                        </label>
+                    </div>
+                </fieldset>
+            </div>
+            <div>
+                <label for="no_equipment">sans équipement
+                    <input type="checkbox" id="no_equipment">
+                </label>
+            </div>
+        </fieldset>
+        
+        <p id="bienvenue">Bienvenue dans la Numi Airsoft Association</p>
+        <div id="submit"><input type="submit"></div>
+    </form>
+</body>
+
+</html>

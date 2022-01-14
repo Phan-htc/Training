@@ -1,0 +1,16 @@
+Enoncé
+On peut lire au sujet d'un médicament :
+Chez les enfants (12 mois à 17 ans), la posologie doit être établie en fonction de la surface corporelle du patient (voir formule de Mosteller).
+Une dose de charge unique de 70 mg par mètre carré (sans dépasser 70 mg par jour) devra être administrée.
+Pour calculer la surface corporelle en m2 on utilise la formule de Mosteller suivante :
+Surface corporelle en m2 = {image}
+On considère les informations ci-dessous :
+Patient Lou Joé
+Âge 5 ans 15 ans
+Taille (m) 1,05 1,50
+Masse (kg) 17,5 50
+Dose Administrée 10050 mg  mg
+La posologie a-t-elle été respectée pour Joé ? Justifier la réponse.
+Vérifier que la surface corporelle de Lou est environ de 0,71 m2
+Dans cette question, toute trace de recherche, même incomplète, sera prise en compte dans l'évaluation.
+La posologie a-t-elle été respectée pour Lou ? Justifier la réponse.
