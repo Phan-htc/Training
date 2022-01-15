@@ -1,0 +1,107 @@
+body {
+	font-family: Arial, sans-serif;
+}
+table {
+    border-collapse: collapse; /* sinon les bordure de thead et tfoot ne seront pas visibles */
+    font-size: 0.8em;
+}
+thead {
+    text-align: left;
+}
+thead tr {
+    background-color: white;
+    border-bottom: 1px solid black;
+}
+tbody tr:not(:last-child) {
+    height: 2.2em; /* un peu de hauteur pour les cellules */
+    border-bottom: 1px solid lightgray;
+}
+tfoot tr {
+    border-top: 1px solid black;
+    text-align: left;
+}
+tbody tr:nth-child(odd) {
+    background-color: #F2F2F2; /*  Couleur des lignes impaires */
+}
+tbody tr:nth-child(even) {
+    background-color: #FAFAFA; /*  Couleur des lignes paires */
+}
+tbody tr:hover {
+    background-color: tan; /* changement de couleur au survol de la souris */
+}
+/* Début des règles par colonne */
+tbody td:first-child {
+	width: 150px;
+}
+tbody td:nth-child(2) {
+	width: 200px;
+}
+tbody td:nth-child(3) {
+	width: 100px;
+}
+tbody td:nth-child(4) {
+	width: 30px;
+    padding-right: 2em;
+}
+tbody td:nth-child(5) {
+	width: 100px;
+}
+tbody td:nth-child(6) {
+	width: 100px;
+}
+.numeric{
+	text-align: right;
+}
+.salary::before {
+    content: "$";
+}
+/* Fin des règles par colonne */
+
+
+/*
+NOTES COMPLEMENTAIRES
+________________________________________________________
+NOTE 1
+L'utilisation de l'élément colgroup est aussi possible
+pour définir les largeurs de colonne.
+.cg1 {
+    width: 150px;
+}
+________________________________________________________
+NOTE 2
+L'image présente une légère différence de couleur dans la première colonne.
+
+Modifier les couleurs n'est pas très difficile
+
+tbody tr:nth-child(odd) td:first-child {
+	background-color: #E6E6E6;
+}
+tbody tr:nth-child(even) td:first-child {
+	background-color: #F2F2F2;
+}
+
+Par contre conserver la mise en couleur de la ligne survolée devient compliqué.
+La ligne suivante aide un peu mais ne règle pas le problème à 100%
+
+tbody tr td:first-child:hover {
+    background-color: tan;
+}
+
+Le problème ? Le point des règles CSS.
+A ce sujet n'hésitez pas à lire la documentation sur le poids des sélecteurs CSS.
+La notion est complexe, mais il est au moins important de savoir qu'elle existe
+et explique quelques comportements qu'on peut juger anormaux...
+https://developer.mozilla.org/fr/docs/Apprendre/CSS/Introduction_%C3%A0_CSS/La_cascade_et_l_h%C3%A9ritage
+
+Si on veut être sûr que notre règle va être prie en compte, il faut qu'elle ait au moins
+le même poids que la "surcoloration" des premiers td de chaque ligne de la table.
+Or cette règle a un poids de  (une pseudo classe applisqué à un élément et un élément tr).
+En ajoutant une classe sur notre tr et en ciblant cette classe avec une pseudo-classe en plus,
+on obtient un poids de 21.
+La règle suivante peut donc se trouver n'importe où, elle aura priorité sur les autres.
+
+.tr:hover td:first-child {
+    background-color: tan;
+}
+
+*/

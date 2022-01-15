@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico">
+    <!-- La recopie de ce petit script permet le support
+              de MathML par le navigateur.-->
+    <script async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <link rel="stylesheet" href="brevet.css">
+    <title>Brevet</title>
+</head>
+
+<body>
+    <h1>Enoncé</h1>
+    <p>On peut lire au sujet d'un médicament&nbsp;:</p>
+
+    <div id="enonce">
+        <p>&laquo; Chez les enfants (12 mois à 17 ans), la posologie doit être établie en fonction de la surface
+            corporelle du patient (voir formule de Mosteller).</p>
+        <p>Une dose de charge unique de 70&nbsp;mg par mètre carré (sans dépasser 70&nbsp;mg par jour) devra être
+            administrée. &raquo;</p>
+    </div>
+    <p>Pour calculer la surface corporelle en m<sup>2</sup> on utilise la formule de Mosteller suivante&nbsp;:</p>
+
+    <!-- Ici commence la formule écrite en MathML -->
+    <p>
+        Surface corporelle en
+        <math>
+            <mrow>
+                <msup>
+                    <mi>m</mi>
+                    <mn>2</mn>
+                </msup>
+                <mo>=</mo>
+                <msqrt>
+                    <mfrac>
+                        <mrow>
+                            <mi>taille (en cm)</mi>
+                            <mo>x</mo>
+                            <mi>masse (en kg)</mi>
+                        </mrow>
+                        <mrow>
+                            <mn>3600</mn>
+                        </mrow>
+                    </mfrac>
+                </msqrt>
+            </mrow>
+        </math>
+    </p>
+    <!-- Fin de la formule MathML -->
+    <p>On considère les informations ci-dessous&nbsp;:</p>
+
+    <table>
+        <colgroup class="gcol1">
+            <col>
+        </colgroup>
+        <colgroup class="gcol2">
+            <col>
+            <col>
+        </colgroup>
+        <thead>
+            <tr>
+                <th>Patient</th>
+                <td>Lou</td>
+                <td>Joé</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Âge</th>
+                <td>5 ans</td>
+                <td>15 ans</td>
+            </tr>
+            <tr>
+                <th>Taille (m)</th>
+                <td>1,05</td>
+                <td>1,50</td>
+            </tr>
+            <tr>
+                <th>Masse (kg)</th>
+                <td>17,5</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <th>Dose Administrée</th>
+                <td>50&nbsp;mg</td>
+                <td>100&nbsp;mg</td>
+            </tr>
+        </tbody>
+    </table>
+    <ol>
+        <li>La posologie a-t-elle été respectée pour Joé&nbsp;? Justifier la réponse.</li>
+        <li>Vérifier que la surface corporelle de Lou est environ de 0,71&nbsp;m<sup>2</sup>
+            <p class="note">Dans cette question, toute trace de recherche, même incomplète, sera prise en compte dans
+                l'évaluation.</p>
+        </li>
+        <li>La posologie a-t-elle été respectée pour Lou&nbsp;? Justifier la réponse.</li>
+    </ol>
+</body>
+
+</html>
