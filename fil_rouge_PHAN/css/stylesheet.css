@@ -1,3 +1,4 @@
+/************général************/
 @font-face {
     font-family: "satisfy";
     src: url(../Satisfy-Regular.ttf);
@@ -16,12 +17,24 @@ header, footer {
 h1 {
     font-family: 'satisfy';
 }
+p, span{
+    margin-left:10px;
+    margin-right:10px;
+}
 
+/************************/
+.éphéméride, .Météo{
+    width: 400px;
+    margin-left: 15px;
+}
+.Température{
+    width:250px;
+}
 .éphéméride, .Température {
     border: 1px solid black;
     background-color: #bfecc6;
+    margin-left: 15px;
 }
-
 table {
     border-collapse: collapse;
     background-color: #bfecc6;
@@ -29,6 +42,21 @@ table {
 
 td {
     border: 1px solid black;
+    margin:3px;
+}
+/**************disposition****************/
+
+.col1{
+    float:left;
+}
+.Température{
+    float:left;
+    margin-left: 30px;
+}
+/*****************couleur*****************/
+figure{
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 .Tmin
 {

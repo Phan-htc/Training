@@ -15,39 +15,38 @@
         <h1>Ma station Météo</h1>
     </header>
 
-    <div class="éphéméride">
-        <h2>éphéméride</h2>
-        <p>Nous somme le <span>&lt;date&gt;</span> </p>
-        <p>Il est <span>hh:mm:ss </span></p>
-        <p>Le soleil se lève à <span>hh:mm:ss</span></p>
-        <p>Et se couche à <span>hh:mm:ss</span> </p>
-        <p>Aujourd'hui nous fêtons les <span>&lt;nom&gt;</span>;</p>
-
+    <div class="col1">
+        <div class="éphéméride">
+            <h2>éphéméride</h2>
+            <p>Nous somme le <span>&lt;date&gt;</span> </p>
+            <p>Il est <span>hh:mm:ss </span></p>
+            <p>Le soleil se lève à <span>hh:mm:ss</span></p>
+            <p>Et se couche à <span>hh:mm:ss</span> </p>
+            <p>Aujourd'hui nous fêtons les <span>&lt;nom&gt;</span>;</p>
+        </div>
+        <div class="Météo">
+            <table>
+                <tr>
+                    <td><span>mercredi</span></td>
+                    <td><img src="img/pluie.png" alt="pluie"></td>
+                    <td><span>Aujourd'hui le temps est pluvieux</span></td>
+                </tr>
+                <tr>
+                    <td><span>jeudi</span></td>
+                    <td><img src="img/maussade.png" alt="maussade"></td>
+                    <td><span>demain le telps sera maussade</span></td>
+                </tr>
+                <tr>
+                    <td><span>vendredi</span></td>
+                    <td><img src="img/sun.png" alt="ensoleillé"></td>
+                    <td><span>Après demain le temps sera ensoleillé</span></td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            &copy;<a href="contact.html" target="_blank">formulaire de contact</a>
+        </div>
     </div>
-
-    <div class="Météo">
-        <table>
-            <tr>
-                <td>mercredi</td>
-                <td><img src="img/pluie.png" alt="pluie"></td>
-                <td>Aujourd'hui le temps est pluvieux</td>
-            </tr>
-
-            <tr>
-                <td>jeudi</td>
-                <td><img src="img/maussade.png" alt="maussade"></td>
-                <td>demain le telps sera maussade</td>
-            </tr>
-
-            <tr>
-                <td>vendredi</td>
-                <td><img src="img/sun.png" alt="ensoleillé"></td>
-                <td>Après demain le temps sera ensoleillé</td>
-            </tr>
-        </table>
-
-    </div>
-
     <div class="Température">
         <h2>Température</h2>
         <figure class="Tmin">
@@ -63,11 +62,7 @@
             <figcaption>moyenne</figcaption>
         </figure>
     </div>
-
-
-    <div>&copy; 
-        <a href="contact.html" target="_blank">formulaire de contact</a>
-    </div>
+   
 </body>
 
 </html>
