@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let N = Number(prompt('entrer valeur 1'));
+        console.log(N);
+        let P = Number(prompt('entrer valeur 2'));
+        console.log(P);
+
+        function signe(N, P) {
+            if (N > 0 && P > 0|| N<0 && P<0) {
+                console.log('le résultat est positif');
+            } else {
+                console.log('le résultat est négatif');
+            }      
+        }
+        signe(N, P);
+
+
+        /*
+        possibilité alternatif mais ne respecte pas la consigne
+
+            let N=Number(prompt('entrer valeur 1'));
+                console.log(N);
+                let P=Number(prompt('entrer valeur 2'));
+                console.log(P);
+
+                function signe(N,P){
+                    produit = (N*P);
+                    if(produit > 0){
+                    console.log('le signe est positif');}
+                    else{console.log('le signe est négatif');}
+                }
+                signe(N,P);
+
+        */
+    </script>
+</body>
+
+</html>

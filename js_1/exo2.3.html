@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>taux</title>
+</head>
+
+<body>
+    <script>
+        let PrixHT = Number(prompt('veuillez entrer un prix HT'));
+        console.log(PrixHT);
+        let Quantité = Number(prompt('veuillez entrer une Quantité'));
+        console.log(Quantité);
+        let Tva = Number(prompt('veuillez entrer le taux de Tva'));
+        console.log(Tva);
+        let CalculeTva = Number(PrixHT * (Tva / 100)); 
+        console.log(CalculeTva);
+        let TTC = Number(CalculeTva + PrixHT);
+        console.log(TTC * Quantité);
+    </script>
+</body>
+
+</html>
