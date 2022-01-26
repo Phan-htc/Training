@@ -12,13 +12,15 @@
     <script>
         let nom_1 = String(prompt('entrer un nom'));
         console.log(nom_1);
+
         let nom_2 = String(prompt('entrer un nom'));
         console.log(nom_2);
+        
         let nom_3 = String(prompt('entrer un nom'));
         console.log(nom_3);
 
         function order(nom_1, nom_2, nom_3) {
-            if (nom_1 > nom_2 > nom_3) {
+            if ((nom_1 < nom_2) && (nom_2 < nom_3)) {
                 console.log('les noms sont rangé dans l\'\ordre alphabetique');
             } else {
                 console.log('les noms ne sont pas rangé dans l\'\ordre alphabetique');

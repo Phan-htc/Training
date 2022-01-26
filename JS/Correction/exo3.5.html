@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exo 3.5</title>
+</head>
+
+<body>
+    <script>
+        let nb1, nb2;
+        nb1 = Number(prompt("Entrez le premier facteur"));
+        nb2 = Number(prompt("Entrez le second facteur"));
+        /*
+        On sait que le produit de deux nombres du même signe est positif
+        et que le produit de deux nombres de signes différents est négatif
+        */
+        /* Je teste don c si :
+        soit nb1>0 ET nb2>0 : même signe (positif)
+        soit nb1<0 ET nb2<0 : même signe (négatif)
+        */
+        // soit...soit, c'est un OU, donc ||
+        // ET... c'est un et donc &&
+        // Reste à traiter le cas du 0
+        // Un produit est nul si l'un des deux facteurs au moins est nul
+        // donc si nb1 est nul OU nb2 est nul (ou les deux)
+        if ( (nb1 == 0) || (nb2 == 0) ) {
+            console.log("Leur produit est nul");
+        } else if ( ((nb1 > 0) && (nb2 > 0)) || ((nb1 < 0) && (nb2 < 0)) ) {
+            console.log("leur produit est positif");
+        } else {
+            console.log("Leur produit est négatif");
+        }
+    </script>
+</body>
+
+</html>

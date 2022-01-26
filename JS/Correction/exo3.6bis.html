@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exo 3.6 avec switch</title>
+</head>
+
+<body>
+    <script>
+        let age;
+        age = Number(prompt("Entrez l'âge de la personne"));
+        switch (age) {
+            case 10:
+            case 11:
+                console.log("pupille");
+                break;
+            case 12:
+            case 13:
+                console.log("benjamin");
+                break;
+            case 14:
+            case 15:
+                console.log("minime");
+                break;
+            case 16:
+            case 17:
+                console.log("cadet");
+                break;
+            case 18:
+            case 19:
+                console.log("junior");
+                break;
+            default:
+                if (age <= 9) {
+                    console.log("poussin");
+                } else {
+                    console.log("senior");
+                }
+        }
+    </script>
+</body>
+
+</html>

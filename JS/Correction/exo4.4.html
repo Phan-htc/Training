@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exo 4.4</title>
+</head>
+
+<body>
+    <script>
+        /*
+        Demander un nombre de photocopies à l'utilisateur
+        SI j'ai 10 ou moins photocopies il paye 10 centimes / photcopie
+        SI j'ai entre 11 et 30 inclus il paye 10 centime par photcopie pour les 10 premières et 9 centimes pour les suivantes
+        SI j'ai 31+ photocopies, il paye 10 c/p les 10 premières, 9 c/p les 20 suivantes, et 8 c/p toutes les autrs
+        */
+        let nbPhotocopies = Number(prompt("Entrez le nombre de photocopies"));
+        let montant;
+        if (nbPhotocopies <= 10) {
+            montant = nbPhotocopies * 0.10;
+        } else if (nbPhotocopies <= 30) {
+            montant = 10 * 0.10 + (nbPhotocopies - 10) * 0.09;
+        } else {
+            montant = 10 * 0.10 + 20 * 0.09 + (nbPhotocopies - 30) * 0.08;
+        }
+        console.log("vous devez payer " + montant + " €");
+    </script>
+</body>
+
+</html>

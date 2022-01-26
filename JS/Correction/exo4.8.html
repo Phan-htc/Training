@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exo 4.8</title>
+</head>
+
+<body>
+    <script>
+        /*
+        Une date valide c'est :
+        - une année
+        - un mois entre 1 et 12
+        - un jour entre 1 et 28, 29, 30 ou 31 selon le mois et l'année !
+        La difficulté, c'est de connaître le nombre de jours dans le mois et l'année fournis.
+        Ça va dépendre du mois :
+        - 1, 3, 5, 7, 8, 10 et 12 ont 31 jours
+        - 4, 6, 9 et 11 ont 30 jours
+        - 2 a 28 jours ou 29 les années bissextiles.
+        */
+        let year, month, day; // La date
+        let isLeapYear; // année bissextile ?
+        let isValidMonth; // mois valide ?
+        let isValidDay; // jour valide ?
+        let maxDayInMonth; // Le nombre maximum de jour dans le mois donné
+
+        // La saisie des données utilisateur
+        year = Number(prompt("Entrez l'année de votre date"));
+        month = Number(prompt("Entrez le mois de votre date"));
+        day = Number(prompt("Entrez le jour de votre date"));
+
+        isValidMonth = (month >= 1) && (month <= 12);
+
+        // Est-ce que le mois est valide ?
+        if (isValidMonth) {
+            // Est-ce une année bissextile ?
+            isLeapYear = ((year % 400 == 0) || ((year % 4 == 0) && (year % 100 != 0)));
+            // Jour max dans le mois et l'année
+            if (month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10 || month == 12) {
+                maxDayInMonth = 31;
+            } else if (month == 4 || month == 6 || month == 9 || month == 11) {
+                maxDayInMonth = 30;
+            } else if (isLeapYear) {
+                maxDayInMonth = 29;
+            } else {
+                maxDayInMonth = 28;
+            }
+
+            // un jour valide doit être entre 1 et 31 sur les mois 1,3,5,7,8,10,12, ou entre 1 et 30 sur les mois 4,6,9,11
+            // ou entre 1 et 29 sur le mois 2 année bissextile ou entre 1 et 28 sur le mois 2 année normale
+            isValidDay = (day >= 1) && (day <= maxDayInMonth);
+            if (isValidDay) {
+                console.log("Date valide");
+            } else {
+                console.log("Jour invalide dans ce mois et cette année");
+            }
+        } else {
+            console.log("Mois (et donc date) invalide");
+        }
+    </script>
+</body>
+
+</html>

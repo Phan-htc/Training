@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exo 3.6</title>
+</head>
+<body>
+    <script>
+        /*
+        Demander un nombre à l'utilisateur, on sait faire.
+        comparer ce nombre à différentes valeurs
+        SI (nb <= 9) alors poussin
+        SI ((10 <= nb) ET (nb <= 11)) alors pupille
+        SI ((12 <= nb) ET (nb <= 13)) alors benjamin
+        ...
+        SI (nb > 19) alors senior
+        */
+       let age;
+       age = Number(prompt("Entrez l'âge de la personne"));
+       if (age <= 9) {
+           console.log("poussin");
+       } else if ((age >= 10) && (age <= 11)) {
+           console.log("pupille");
+       } else if ((age >= 12) && (age <= 13)) {
+           console.log("benjamin");
+       } else if ((age >= 14) && (age <= 15)) {
+           console.log("minime");
+       } else if ((age >= 16) && (age <= 17)) {
+           console.log("cadet");
+       } else if ((age >= 18) && 'age <= 19') {
+           console.log("junior");
+       } else if (age > 19) {
+           console.log("senior");
+       }
+    </script>
+</body>
+</html>

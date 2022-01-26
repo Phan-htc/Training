@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exo 3.4</title>
+</head>
+
+<body>
+    <script>
+        // Les variables
+        let nbFourniParUtilisateur;
+        let nbTraduit;
+        // Début de l'algo
+        nbFourniParUtilisateur = prompt("Entrez un nombre pour connaître son signe");
+        // Ici, nbFourniParUtilisateur contient une string !
+        // Or je veux un nombre
+        nbTraduit = Number(nbFourniParUtilisateur);
+        // Ici nbTraduit contient bien un nombre
+        if (nbTraduit > 0) { // Si la condition est vraie, donc si nbTraduit est strictement supérieur à 0
+            console.log("Ce nombre est strictement positif");
+        } else if (nbTraduit < 0) { // On regarde si le nbTraduit est strictement négatif
+            console.log("Ce nombre est strictement négatif");
+        } else { // Ici, nbTraduit n'est ni strictement négatif (if précédent) ni strictement positif (1er if)
+            // il est donc égal à 0
+            console.log("Ce nombre est nul");
+        }
+        // Fin de l'algo
+
+        /*
+        Demander à l'utilisateur de fournir une température et indiquer l'état de l'eau à cette température
+        Pour rappel, l'eau est solide (glace) en dessous de 0°C, gazeuse (vapeur) au-dessus de 100°C,
+        et liquide entre les deux
+        */
+    </script>
+</body>
+
+</html>

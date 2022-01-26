@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exo 2.2</title>
+</head>
+<body>
+    <script>
+        let pht = Number(prompt("Quel est le prix HT de l'article ?"));
+        let qty = Number(prompt("Quel est la quantité achetée ?"));
+        let ttva = Number(prompt("Quel est le taux de TVA à appliquer ?"));
+        let pttc = qty *(pht + pht*ttva/100) // ou pht*(1+ttva/100)
+        console.log(pttc);
+    </script>
+</body>
+</html>

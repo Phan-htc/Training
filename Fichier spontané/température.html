@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>etat de l'eau</title>
+</head>
+
+<body>
+    <script>
+        let Temperature = Number(prompt('veuillez entrer une température'));
+        console.log(Temperature);
+
+// si T est inférieur a 100 et supérieur a 0
+        if ((Temperature < 100) && (Temperature > 0)) {
+            console.log('l\'\ eau est à l\'\etat liquide');
+        }   
+        // sinon si T est inférieur à 0
+         else if (Temperature < 0) {
+            console.log('l\'\ eau est à l\'\etat solide');
+            }
+            
+        // sinon T est supérieur à 100
+         else { 
+            console.log('l\'\ eau est à l\'\etat gazeux');
+            }
+        
+    </script>
+</body>
+
+</html>

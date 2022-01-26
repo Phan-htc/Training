@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exo 4.7</title>
+</head>
+
+<body>
+    <script>
+        /*
+        Saisie de l'age du conducteur, son ancienneté de permis, son ancienneté dans l'assurance et le nombre d'accidents qu'il a eu.
+        Système à point :
+            - 1 accident = 1 point
+            - jeune conducteur (moins de 25 ans) = 1 point
+            - jeune permis (moins de 2 ans de permis) : 1 point
+            - ancien assuré : -1 point
+        Condition d'assurabilité :
+            - -1 point : tarif bleu (possible ssi tarif vert et ancien assuré)
+            - 0 point : tarif vert
+            - 1 point : tarif orange
+            - 2 points : tarif rouge
+            - 3+ points : non assurable
+        */
+        let age, nbAccident, anciennetéPermis, anciennetéAssurance, points;
+        age = Number(prompt("Entrez l'âge du conducteur"));
+        nbAccident = Number(prompt("Entrez le nombre d'accidents du conducteur"));
+        anciennetéPermis = Number(prompt("Entre le nombre d'année de permis du conducteur"));
+        anciennetéAssurance = Number(prompt("Entrez le nombre d'années d'assurance du conducteur"));
+
+        points = nbAccident;
+        if (age < 25) {
+            points++;
+        }
+        if (anciennetéPermis <= 2) {
+            points++;
+        }
+        if (points <= 2 && anciennetéAssurance >= 5) {
+            point--;
+        }
+        switch (points) {
+            case -1:
+                console.log("tarif bleu");
+                break;
+            case 0:
+                console.log("Tarif vert");
+                break;
+            case 1:
+                console.log("Tarif orange");
+                break;
+            case 2:
+                console.log("Tarif rouge");
+                break;
+            default:
+                console.log("Non assurable");
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exo 4.5</title>
+</head>
+
+<body>
+    <script>
+        /*
+        Entrer l'âge et le sexe, donc un nombre et une string
+        payent l'impôts :
+            les hommes de 20 ans ou plus : sexe masculin ET age >= 20
+            les femmes entre 18 et 35 ans : sexe féminin ET (18 <= age <= 35)
+        */
+        let sexe, age;
+        sexe = prompt("Entrez le sexe du bulgrozien (F/M)");
+        age = Number(prompt("Entrez l'âge du bulgrozien"));
+        if (
+            ((sexe == "M") && (age >= 20))
+            ||
+            ((sexe == "F") && ((18 <= age) && (age <= 35)))
+        ) {
+            console.log("paye l'impôt");
+        } else {
+            console.log("Ne paye pas l'impôt");
+        }
+    </script>
+</body>
+
+</html>

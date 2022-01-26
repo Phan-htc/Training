@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        Un magasin de reprographie facture 
+        0,10 E les dix premières photocopies, 
+        0,09 E les vingt suivantes 
+        0,08 E au-delà. 
+        Écrivez un programme qui demande à l’utilisateur le nombre de photocopies effectuées
+        et qui affiche la facture correspondante.
+*/ 
+    let NombreDeCopie = Number(prompt('combien de photocopie souhaitez vous imprimer ?'));    
+    let Montant 
+
+    function Prix(NombreDeCopie){
+        if(NombreDeCopie<=10){
+            Montant= 0.10*NombreDeCopie;
+        }
+        if((NombreDeCopie>10) && (NombreDeCopie<=20)){
+            Montant= 0.09*NombreDeCopie;
+        }
+        if(NombreDeCopie<20){
+            Montant= 0.08*NombreDeCopie;
+        }
+        console.log('Le montant est de'+Montant+'€');
+    }
+
+    </script>
+</body>
+</html>

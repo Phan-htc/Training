@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exo 3.3</title>
+</head>
+<body>
+    <script>
+        let nom1, nom2, nom3;
+        nom1 = prompt("Entrez un premier nombre à comparer");
+        nom2 = prompt("Entrez un second nombre à comparer");
+        nom3 = prompt("Entrez un troisième nombre à comparer");
+        /*
+        Savoir si les 3 nombres sont classés par ordre croissant, ça veut dire :
+        nb1 < nb2 < nb3.
+        donc : (nb1 < nb2) ET (nb2 < nb3)
+        Ça marche pareil avec des chaines !
+        "abc" < "abd" < "bcd"
+        */
+
+       if ((nom1 < nom2) && (nom2 < nom3)) {
+           console.log("Les noms sont classés par ordre alphabétique");
+       } else {
+           console.log("Les noms ne sont pas classés par ordre alphabétique");
+       }
+    </script>
+</body>
+</html>

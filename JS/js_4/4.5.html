@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        Les habitants de Bulgroz paient l’impôt selon les règles suivantes :
+        • Les hommes de plus de 20 ans paient l’impôt.
+        • Les femmes paient l’impôt si elles ont entre 18 et 35 ans.
+        • Les autres ne paient pas d’impôt.
+        Le programme demandera donc l’âge et le sexe du Bulgrozien, et se prononcera donc ensuite sur le
+        fait que l’habitant est imposable
+*/
+        let Age = Number(prompt('Veuillez entrer l\'\age de l\'\habitant'));
+        let Sexe = String(prompt('Veuillez entrer le sexe de l\'\habitant'));
+        
+
+        if(
+            (Sexe == homme) && (Age<=20)
+        ||
+        ((Sexe == femme) && ( Age<18) && ( Age>=35))
+        )
+        {
+            console.log("Doit payer l'impot");
+        } else {
+            console.log("Ne paye pas d'impot");
+        }
+    </script>
+</body>
+</html>

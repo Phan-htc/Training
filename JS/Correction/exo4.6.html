@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exo 4.6</title>
+</head>
+
+<body>
+    <script>
+        /*
+        Entrer le score des 4 participants
+        2 cas :
+            1/ Elu au premier tour : SI son score > 50%
+            2/ Éliminé au premier tour : SI son score < 12.5% OU SI un autre est élu au premier tour
+            i.e. soit le candidat 2 a plus de 50%, soit le candidat3 à plus de 50% soit le candidat4 a plus de 50%
+            3/ Second tour
+                S'il est au second tour :
+                - soit il a le meilleur score au premier tour => ballotage favorable
+                    (scoreCandidat1 > scoreCandidat2) ET (scoreCandidat1 > scoreCandidat3) ET (scoreCandidat1 > scoreCandidat)
+                - soit il n'a pas le meilleur score => ballotage défavorable
+        */
+        let scoreCandidat1, scoreCandidat2, scoreCandidat3, scoreCandidat4;
+        scoreCandidat1 = Number(prompt("Entrez le score du premier candidat"));
+        scoreCandidat2 = Number(prompt("Entrez le score du second candidat"));
+        scoreCandidat3 = Number(prompt("Entrez le score du troisième candidat"));
+        scoreCandidat4 = Number(prompt("Entrez le score du quatrième candidat"));
+
+        const tropPetitScore = (scoreCandidat1 < 12.5);
+        const autreCandidatElu = (scoreCandidat2 > 50) || (scoreCandidat3 > 50) || (scoreCandidat4 > 50);
+        const eluPremierTour = (scoreCandidat1 > 50);
+        const meilleurScore = (scoreCandidat1 > scoreCandidat2) && (scoreCandidat1 > scoreCandidat3) && (scoreCandidat1 > scoreCandidat4);
+
+        if (eluPremierTour) {
+            console.log("Élu au premier tour");
+        } else if ( tropPetitScore || autreCandidatElu ) {
+            console.log("Éliminé au premier tour");
+        } else {
+            // Second tour !
+            if (meilleurScore) {
+                console.log("Ballotage favorable au second tour");
+            } else {
+                console.log("Ballotage défavorable au second tour");
+            }
+        }
+    </script>
+</body>
+
+</html>

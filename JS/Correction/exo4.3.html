@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exo 4.3</title>
+</head>
+
+<body>
+    <script>
+        /*
+        L'utilisateur doit saisir 2 nombres entiers entre 0 et 59 et un entre 0 et 23 : heure, minute, seconde
+        3 variables qui contiennent les valeurs une seconde plus tard : h, m, s
+        s prend la valeur de seconde + 1, m prend la valeur de minute et h prend la valeur de heure.
+        SI (s == 60) on a passé une minute :
+            on augmente m de 1
+            on repasse s à 0
+            SI (m == 60) on a passé une heure :
+                on augmnente h de 1
+                on repasse m à 0
+                SI (h == 24) on a passé un jour :
+                    on repasse h à 0
+        */
+        let heure, minute, seconde, h, m, s;
+        heure = Number(prompt("Entrez les heures entre 0 et 23"));
+        minute = Number(prompt("Entrez les minutes entre 0 et 59"));
+        seconde = Number(prompt("Entrez les secondes entre 0 et 59"));
+        s = seconde + 1;
+        m = minute;
+        h = heure;
+        if (s == 60) {
+            s = 0;
+            m = m + 1; // ou m += 1 ou encore m++
+            if (m == 60) {
+                m = 0;
+                h = h + 1;
+                if (h == 24) {
+                    h = 0;
+                }
+            }
+        }
+        console.log(`Dans une seconde il sera ${h}:${m}:${s}`);
+        // identique à la sortie à :
+        console.log("Dans une seconde il sera " + h + ":" + m + ":" + s);
+    </script>
+</body>
+
+</html>

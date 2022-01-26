@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--
+1/ j'incrémente les minutes
+2/ je teste si j'ai 60 minutes
+2.1/ si oui, alors
+2.1.1/je repasse les minutes à 0 et j'incrémente les heures
+2.1.2/ je teste si les heures sont à 24
+2.1.2.1/ si oui alors je repasse les heures à 0-->
+
+    <script>
+        // incrémentation les minutes
+
+        let sec = parseFloat(prompt('entrer les secondes'))
+        let min = parseFloat(prompt('entrer les minutes'));
+        let hour = parseFloat(prompt("Entrer l'heure"));
+
+        s += 1;
+        if (sec == 60) {
+            min = 0;
+            min += 1;
+            if (min == 60) {
+                min = 0;
+                hour += 1;
+                if (hour == 24) {
+                    hour = 0;
+                }
+            }
+        }
+        console.log(`dans une seconde il sera ${h}:${m}:${s}`);
+    </script>
+</body>
+
+</html>
