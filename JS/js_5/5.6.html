@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boucle 6</title>
+</head>
+<body>
+    <script>
+        /* 
+         demande un nombre de départ, et qui calcule la somme des entiers jusqu’à
+        ce nombre. Par exemple, si l’on entre 5, le programme doit calculer :*/
+        const val=Number(prompt("Entrer un nombre numérique"));
+        let cumul=0;
+        for (let i=1; i<= val; i++){
+            cumul = cumul + i;
+        }
+        console.log("La sommme de tous les nombres entiers entre 1 et"+ val +"est"+cumul);
+        let valeur_Totale = val * (val+1)/2;
+        console.log(valeur_Totale);
+    </script>
+</body>
+</html>

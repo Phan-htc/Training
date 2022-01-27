@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boucle 2</title>
+</head>
+
+<body>
+    <script>
+        let value = 0;
+
+        while ((isNaN(value)) || (value <= 10) || (value >= 20)) {
+            value = Number(prompt("Entrer un nombre entre 10 et 20 en caractère numérique"));
+            if (value > 20) {
+                console.log("Plus petit !");
+            }
+            if (value < 10) {
+                console.log("Plus grand !");
+            }
+        }
+
+        /* 
+        let value = nb_saisie
+        do{
+            nb_saisi = Number(prompt('entrer un nombre entre 10 et 20'));
+            if(nb_saisie)
+        }
+        */
+    </script>
+</body>
+
+</html>

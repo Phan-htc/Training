@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>boucle 5</title>
+</head>
+
+<body>
+    <script>
+        function bouclefor(val) {
+            let val = Number(prompt("Entrer un nombre numérique"));
+
+            for (let i = 0; i < 11; i++) {
+                console.log(val + "x" + i + "=" + val * i);
+            }
+        }
+        function bouclewhile(nb_saisi){
+            const nb_saisi = Number(prompt("entrez la base de la table"));
+            let BaseDeLaTable = 1;
+            while(BaseDeLaTable <=10){
+                console.log(`${nb_saisi} x ${BaseDeLaTable} =${nb_saisi*BaseDeLaTable}` );
+                BaseDeLaTable++;
+            }
+        }
+    </script>
+</body>
+
+</html>
