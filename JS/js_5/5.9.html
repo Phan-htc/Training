@@ -1,27 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>boucle 8</title>
+    <title>Boucle 9</title>
 </head>
-
 <body>
     <script>
         let LePlusGrand = -Infinity;
         let I_LePlusGrand;
-        for (let i = 0; i < 20; i++) {
-            const val = Number(prompt("entrer un nombre n°" + (i + 1)));
+        let i = 1;
+       
+        // tant que val est différent de 0, on effectue la boucle
+        while (val !== 0) {
+            const val = Number(prompt("entrer un nombre n°" + (i)));           
             if (val > LePlusGrand) {
                 LePlusGrand = val;
                 I_LePlusGrand = i;
             }
+            i++; 
         }
+    
         console.log("la plus grande de ces valeurs est " + LePlusGrand);
         console.log("C'est la valeur n°"+ I_LePlusGrand);
     </script>
 </body>
-
 </html>
