@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exo 5.10</title>
+</head>
+
+<body>
+    <script>
+        /*
+        J'ai besoin d'un accumulateur pour sommer les prix des articles
+        Je vais laisser l'utilisateur saisir les prix des articles JUSQU'À
+        ce qu'il saisisse 0.
+        Lire la somme donnée par l'utilisateur
+        Pour le rendu de la monnaie, je vais regarder si je peux retirer 10€
+        et combien de fois. Autrement dit, enlever 10 à l'argent fourni
+        JUSQU'À ce qu'on soit inférieur au montant demandé.
+        Ensuite on fait pareil avec les billet de 5€ et les pièces de 1€
+        */
+        let accu = 0; // Un accumulateur de somme
+        let value;
+        while (value !== 0) {
+            value = Number(prompt("Entrez le prix de l'article"));
+            accu += value; // accu = accu + value;
+        }
+        // Ici accu contient le prix total à payer
+        // On demande la saisie du paiement du client
+        const paiement = Number(prompt("Entrez le montant donné par le client"));
+        let aRendre = paiement - accu;
+        // Ici j'ai le montant à rendre
+        // Je peux regarder combien de fois je peux enlever 10€
+        let billet10 = 0; // Accumulateur de billets de 10€
+        let billet5 = 0; // Accumulateur de billets de 5€
+        let piece1 = 0; // Accumulateur de pièce de 1€
+        while (aRendre >= 10) {
+            aRendre -= 10; // aRendre = aRendre - 10;
+            billet10++;
+        }
+        if (aRendre >= 5) { // parce que 2 billets de 5 ça ferait un billet de 10 !
+            aRendre -= 5;
+            billet5++;
+        }
+        piece1 = aRendre; // Parce que ce qu'il reste c'est un montant entre 0 et 4
+        let b10s;
+        let b5s;
+        let p1s;
+        if (billet10 > 1) {
+            b10s = "s";
+        } else {
+            b10s = "";
+        }
+        if (billet5 > 1) {
+            b5s = "s";
+        } else {
+            b5s = "";
+        }
+        /*
+        opérateur ternaire
+        (condition) ? valeur si condition vraie : valeur si condition fausse
+        */
+        p1s = (piece1 > 1) ? "s" : "";
+        console.log(`Je dois vous rendre ${billet10} billet${b10s} de 10, ${billet5} billet${b5s} de 5 et ${piece1} pièce${p1s} de 1`);
+    </script>
+</body>
+
+</html>

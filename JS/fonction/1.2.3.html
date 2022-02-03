@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // fonction 
+        // admet deux paramètres de type entier l et h 
+        // affiche un rectangle vide de l x h astérisques
+        
+        
+
+        function Rectangle_Vide_Variable(l,h){
+            let lignePleine ="", LigneVide ="";
+            for (let i=0; i< l; i++){
+                lignePleine += "*";
+            }
+            for (let i=0; i< l; i++){
+                if((i==0) || (i == l-1)){
+                    ligneVide += "*";
+                } else {
+                    ligneVide += " ";
+                }
+            }
+        }
+        Rectangle_Vide_Variable();
+
+    </script>
+</body>
+</html>

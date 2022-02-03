@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        const tab = ['_', '#', '*', '0'];
+
+        function random() {
+            let chaine = "";
+            for (let i = 0; i < 50; i++) {
+
+                const i = Math.random();
+                const symb = i * tab.lenght;
+                const final = Math.floor(symb);
+
+                alea += tab[final];
+
+                console.log(alea);
+            }
+        }
+        random();
+    </script>
+</body>
+
+</html>

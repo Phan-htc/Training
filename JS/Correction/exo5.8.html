@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exo 5.8</title>
+</head>
+<body>
+    <script>
+        let biggest = -Infinity;
+        let indexOfBiggest;
+        for (let i = 1; i <= 5; i++) {
+            const value = Number(prompt("Entrez la valeur n°" + (i)));
+            if (value > biggest) {
+                biggest = value;
+                indexOfBiggest = i;
+            }
+        }
+        console.log("La plus grande de ces valeurs est " + biggest);
+        console.log("C'était la valeur n°" + indexOfBiggest);
+    </script>
+</body>
+</html>

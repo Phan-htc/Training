@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*
+        Déclarer le tableau suite 
+        Affecter la valeur 1 à l'index 0 et 1
+        Pour i débutant à 2 jusqu'a 7 avec une incrémentation de 1
+        la valeur de suite[i] sera la somme des 2 valeurs qui la précède.
+        Afficher dans la console
+        */
+
+        let suite = [];
+        suite[0, 1] = 1;
+        for (var i = 2; i < 8; i++) {
+            suite[i] = suite[i - 1] + suite[i - 2];
+            console.log(suite[i]);
+        }
+    </script>
+</body>
+
+</html>

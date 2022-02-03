@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // exo 2
+        /*Demander un nombre à l'utilisateur puis remplir un tableau contenant les 10
+          valeurs suivantes de ce nombre. Afficher ensuite ces valeurs dans la console. */
+
+        let ValuesFromUser = []; // déclaration du tableau
+
+        for (let i = 1; i <= 10; i++) {                                  //pour index 0 qui va jusqu'a 11 avec une incrémentation de 1
+            let Val = Number(prompt("entrer un nombre au tableau"));     //demander a l'user d'entrer un nombre
+            ValuesFromUser.push(Val);                                    //entrer val dans le tableau
+        }
+        console.log(ValuesFromUser);                                     // afficher le tableau dans la console
+    </script>
+</body>
+
+</html>

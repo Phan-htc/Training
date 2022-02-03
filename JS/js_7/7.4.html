@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        /*  
+        déclarer le tableau de suite
+        l'index 0 commence à 1                                                   
+        pour index commence de 1 jusqu'a 6 avec une incrémentation de 1, on rajoute 2 à chaque incrémentation                       
+        On affiche le tableau dans la console
+       
+*/
+        //code alternatif
+        let suite = [];
+        suite[0] = 1;
+        console.log(suite[0])
+        for (var i = 1; i < 7; i++){
+            suite[i] = suite[i - 1] + 2;
+            console.log(suite[i]); 
+        }  
+    </script>
+</body>
+
+</html>

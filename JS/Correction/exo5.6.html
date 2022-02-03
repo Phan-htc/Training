@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exo 5.6</title>
+</head>
+
+<body>
+    <script>
+        /*
+        Demander un nombre à l'utilisateur
+        Je veux parcourir tous les nombres de 1 jusqu'à la valeur entrée
+        et les cumuler par somme
+        */
+        const nbSaisiParUtilisateur = Number(prompt("Entrez un nombre"));
+        let cumul = 0;
+        for (let cpt = 1; cpt <= nbSaisiParUtilisateur; cpt++) {
+            cumul = cumul + cpt;
+        }
+        console.log("La somme de tous les nombres entiers entre 1 et " +
+            nbSaisiParUtilisateur + " est " + cumul);
+    </script>
+</body>
+
+</html>

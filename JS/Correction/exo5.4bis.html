@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exo 5.4bis</title>
+</head>
+
+<body>
+    <script>
+        /*
+        Écrire un programme qui demande un nb à l'utilisateur
+        et qui affiche tous les nombres PAIRS entre ce nombre et 100
+        Rappelons qu'un nombre pair est un nombre divisible par 2
+        donc (nb % 2 == 0)
+        */
+        const nbSaisiParUtilisateur = Number(prompt("Entrez un nombre"));
+        // Parcourir tous les nombres de nbSaisiParUtilisateur jusqu'à 100
+        for (let cpt = nbSaisiParUtilisateur; cpt <= 100; cpt++) {
+            // SI cpt est pair, je l'affiche
+            if (cpt % 2 == 0) {
+                console.log(cpt);
+            }
+        }
+    </script>
+</body>
+
+</html>
