@@ -52,6 +52,4 @@ header('Content-Type: text/html; charset=utf-8');
             border : 1px black solid;
         }
     </style>
-
-
 </html>
