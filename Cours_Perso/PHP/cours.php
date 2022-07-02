@@ -3,7 +3,7 @@
                                                         //LES BASES
 /*==============================================================================================================================*/
 
-//Variables se déclarent avec $
+//Variables se déclarent avec $ et ils sont sensible à la casse ( Var != var )
 // il y a 4 type scalaire ( bool / int / float / string )
 // 4 types composés ( array / object / callable / iterable)
 // 2 type spéciaux ( resource / NULL)
