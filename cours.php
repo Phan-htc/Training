@@ -1,4 +1,8 @@
 <?php
+/*==============================================================================================================================*/
+                                                        //LES BASES
+/*==============================================================================================================================*/
+
 //Variables se déclarent avec $
 // il y a 4 type scalaire ( bool / int / float / string )
 // 4 types composés ( array / object / callable / iterable)
@@ -65,3 +69,31 @@ function nom_de_fonction (string $param1, string $param2 = "valeur par défaut")
     return "Valeur de retour";
 }
 
+include '';         // inclus dans ce fichier un code venant d'un autre fichier
+include_once '';    // Similaire a include mais si le code a deja été inclus, il ne le sera pas une seconde fois
+                    // si il y a une erreur, include produit un warning et le script peux continuer a s'exécuter
+
+require '';         // Similaire a include mais lorsqu'une erreur survient, produit une erreur fatal
+require_once '';    // Similaire a require mais si le code a deja été inclus, il ne le sera pas une seconde fois
+
+/*==============================================================================================================================*/
+                                                        //LES FORMULAIRE
+/*==============================================================================================================================*/
+?>
+<!--                                   RÈGLE ABSOLUE ET IMMUABLE CONCERNANT LES FORMULAIRES
+                                Ne jamais faire confiances aux données envoyé par l'utilisateur
+-->
+
+<form action="#" method="GET"> <!--action envoie les données du formulaire vers le fichier qui va les traiter
+                                # indique que le fichier de traitement est lui même
+                                les méthodes d'envoie sont soit en GET soit en POST, si rien n'est indiqué, la 
+                                méthode par défaut est GET -->
+    <input type="text" name="exemple_name" placeholder="exemple de nom" value="<?= htmlentities($_GET['exemple_name'])?>">
+    <!-- 
+        htmlentities convertit tous les caractères en entités HTML
+        On peux aussi utiliser htmlspecialchars qui convertit les caractères spéciaux en entités HTML
+            Cela est une protection contre l'injection de code
+    -->
+    <input type="number" name ="exemple_number">
+    <button type="submit">Valider</button>
+</form>
