@@ -12,6 +12,12 @@ var unType = string     // on peux déclarer une variable en indiquant son type.
 let bonjour ;           // Déclare une variable dont la portée est celle du bloc courant.
 const MaConstante = 5 ; // Déclare une constante dont la portée est celle du bloc courant, accessible en lecture seule.
 
+// il y a 3 types primitifs de variable : number, string ( chaine de caractère ), booléan ( Valeur logique(Vrai ou Faux)).
+
+let nom = "Sparrow";
+let prenom = "Jack";
+let protagoniste = prenom +" "+ nom; // affichera Jack Sparrow car il y a une concataination avec +, on met un espace avec " " et on concataine.
+
 // Une variable déclarée sans valeur initial vaudra "undefined"
 // Acceder a une variable non déclarée ou avant son initialisation a un identifiant déclaré avec let 
 //      provoquera une exception "ReferenceError"
@@ -60,4 +66,3 @@ let reserveDeBilles = 4000;
 let nombreDeJoueurs = 10;
 let nombreDeBilleParJoueur = reserveDeBilles / nombreDeJoueurs; // affichera 400
 let chacunSonPaquet = reserveDeBilles * nombreDeJoueurs;        // affichera 40 000
-
