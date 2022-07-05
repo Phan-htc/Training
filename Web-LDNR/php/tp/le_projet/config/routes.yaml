@@ -1,0 +1,39 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+test_mon_merci:
+    path:     /merci
+    defaults: { _controller: App\Controller\MonController::index }
+
+test_prem_route:
+    path:     /test_prem_route/{nom}/{prenom}/{age}
+    defaults: { _controller: App\Controller\TestController::index }
+
+
+test_regex_route:
+    path:     /test_regex_route/{nom}/{prenom}/{age}
+#    defaults: { _controller: App\Controller\TestController::index }
+    defaults: 
+      _controller: \App\Controller\TestController::index
+      nom: Lavoisier
+      prenom: Quentin
+      age: 65
+        
+    requirements:
+      nom:    "[[:alpha:]]+"
+      prenom: "[-[:alpha:]]{2,10}"
+      age:   '\d{1,3}'
+    
+test_show_route:
+    path: /test_show_route{url}
+    defaults:
+        _controller: App\Controller\TestController::showRoute
+        _format: html
+        url: /test_show_route/T/Marie/42
+    requirements:
+        url: '[0-9a-zA-Z/_]+'
+        host: 127.0.0.1
+        schemes: http
+        method: GET
+
+    
