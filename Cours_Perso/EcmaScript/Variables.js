@@ -66,3 +66,8 @@ let reserveDeBilles = 4000;
 let nombreDeJoueurs = 10;
 let nombreDeBilleParJoueur = reserveDeBilles / nombreDeJoueurs; // affichera 400
 let chacunSonPaquet = reserveDeBilles * nombreDeJoueurs;        // affichera 40 000
+
+// == et ===
+// == compare 2 variables si elles ont la même valeur
+// === compare 2 variables si elles ont la même valeur et du même type.
+// ! sert a indiquer une négation ( !== veux dire différent en valeur / !=== différent en valeur et en type)
