@@ -1,0 +1,4 @@
+test_mon_include:
+    path:  /test_include
+    defaults:
+      _controller: \App\Controller\TestIncludeController::index

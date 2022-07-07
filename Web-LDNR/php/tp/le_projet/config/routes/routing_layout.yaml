@@ -1,0 +1,4 @@
+test_vue_layout:
+  path: /test_layout
+  defaults:
+    _controller: \App\Controller\TestLayoutController::index

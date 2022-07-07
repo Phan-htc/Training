@@ -1,0 +1,11 @@
+test_mon_view_twig_simple:
+    path:  /test_simple_Twig_vue/{nom}/{prenom}/{age}
+    defaults:
+      _controller: \App\Controller\TestVueTwigController::index
+      prenom: Un
+      nom: Anonyme
+      age: 36
+    requirements:
+      nom:    "[[:alnum:]]+"
+      prenom: "[-[:alnum:]]{2,10}"
+      age:   \d+

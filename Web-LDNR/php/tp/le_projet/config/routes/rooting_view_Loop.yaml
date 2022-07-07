@@ -1,0 +1,4 @@
+test_view_Loop:
+    path:  /Test_Loop_vue/
+    defaults:
+      _controller: \App\Controller\TestVueLoopController::index
