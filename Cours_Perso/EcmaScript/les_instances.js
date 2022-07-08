@@ -1,6 +1,9 @@
 /*==============================================================================================================================*/
-//                                                         LES INSTANCES
+//                                                    LES METHODES D'INSTANCES ET STATIQUE
 /*==============================================================================================================================*/
+
+//L'HERITAGE
+//===========================================
 
 // On créer la classe BankAccount
 class BankAccount {
@@ -12,8 +15,11 @@ class BankAccount {
       console.log("Solde: " + this.balance + " EUR"); // fonction qui affiche dans la console le solde du compte
    }
  }
-// on créer newAccount a partir une nouvelle instance de la classe BankAccount 
-const newAccount = new BankAccount("Will Alexander", 500);
+
+// Grace à l'héritage, les instances qu'on déclare avec new possèdent les propriétés et attibuts de la classe
+// auquel il hérite 
+const newAccount = new BankAccount("Will Alexander", 500);  // newAccount est une instance qui hérite les propriété 
+                                                            // de la classe BankAccount
 // Une instance de classe est également un objet
 
 
@@ -46,3 +52,11 @@ class CompteBancaire {
     }
  
 }
+//===============================================================
+
+// LES METHODES STATIQUES
+
+/*
+Les méthodes statiques sont différente des méthodes d'instances car 
+
+*/
