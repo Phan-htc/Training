@@ -55,5 +55,4 @@ class ReadTablesController extends AbstractController {
                                                   'errors' => $alert,
                                                   'table' => $table]);
   }
-
 }
