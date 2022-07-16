@@ -62,8 +62,8 @@ const sendWelcomeMessageToUser = (user) => {
     }
     }
     
-    sendWelcomeMessageToUser(firstUser);
+    sendWelcomeMessageToUser(firstUser);    //appel de la fonction avec firstUser en paramètre.
     
-    sendWelcomeMessageToUser(secondUser);
+    sendWelcomeMessageToUser(secondUser);   //appel de la fonction avec secondUser en paramètre.
     
-    sendWelcomeMessageToUser(thirdUser);
+    sendWelcomeMessageToUser(thirdUser);    //appel de la fonction avec thirdUser en paramètre.
