@@ -22,15 +22,18 @@ let voitureModele = Voiture["modele"]; // affiche Gemera
 
 // on peux avoir besoin de plusieurs objets du meme type, pour cela on utilise les classes
 
-class Arme {                                    // Déclaration d'une classe
-    constructor(fabriquant, modele, calibre) {   // définir ses variables avec constructor
-    this.fabriquant = fabriquant;
+class Arme {                                        // Déclaration d'une classe
+    constructor(fabriquant, modele, calibre) {      // constructor indique les propriété auquel la classe est constitué
+    this.fabriquant = fabriquant;                   // this est un mot clé qui accède a la propriété
     this.modele = modele;
     this.calibre = calibre;
     }
 }
-// le mot clé this fait référence a la nouvelle instance
-
-// on peux créer une nouvelle instance avec le mot clé new
-
-let Scar = new Arme("FN Herstal", "Heavy", "7.62 OTAN");
+/* l'héritage
+l'héritage est un principe ou toute objet qui hérite d'une class, contient toutes les propriété auquel
+la classe mère possède.
+pour créer un objet qui hérite d'une classe, on doit créer une instance.
+=============================================================================================================
+                                    A SUIVRE AU PROCHAIN COURS SUR LES INSTANCES
+=============================================================================================================
+*/
