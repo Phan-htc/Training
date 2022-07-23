@@ -1,0 +1,241 @@
+1,France,fr
+2,Afghanistan,af
+3,Afrique du sud,za
+4,Albanie,al
+5,Algérie,dz
+6,Allemagne,de
+7,Arabie saoudite,sa
+8,Argentine,ar
+9,Australie,au
+10,Autriche,at
+11,Belgique,be
+12,Brésil,br
+13,Bulgarie,bg
+14,Canada,ca
+15,Chili,cl
+16,Chine (Rép. pop.),cn
+17,Colombie,co
+18,Corée du Sud,kr
+19,Costa Rica,cr
+20,Croatie,hr
+21,Danemark,dk
+22,Égypte,eg
+23,Émirats arabes unis,ae
+24,Équateur,ec
+25,États-Unis,us
+26,El Salvador,sv
+27,Espagne,es
+28,Finlande,fi
+29,Grèce,gr
+30,Hong Kong,hk
+31,Hongrie,hu
+32,Inde,in
+33,Indonésie,id
+34,Irlande,ie
+35,Israël,il
+36,Italie,it
+37,Japon,jp
+38,Jordanie,jo
+39,Liban,lb
+40,Malaisie,my
+41,Maroc,ma
+42,Mexique,mx
+43,Norvège,no
+44,Nouvelle-Zélande,nz
+45,Pérou,pe
+46,Pakistan,pk
+47,Pays-Bas,nl
+48,Philippines,ph
+49,Pologne,pl
+50,Porto Rico,pr
+51,Portugal,pt
+52,République tchèque,cz
+53,Roumanie,ro
+54,Royaume-Uni,uk
+55,Russie,ru
+56,Singapour,sg
+57,Suède,se
+58,Suisse,ch
+59,Taiwan,tw
+60,Thailande,th
+61,Turquie,tr
+62,Ukraine,ua
+63,Venezuela,ve
+64,Yougoslavie,yu
+65,Samoa,as
+66,Andorre,ad
+67,Angola,ao
+68,Anguilla,ai
+69,Antarctique,aq
+70,Antigua et Barbuda,ag
+71,Arménie,am
+72,Aruba,aw
+73,Azerbaïdjan,az
+74,Bahamas,bs
+75,Bahrain,bh
+76,Bangladesh,bd
+77,Biélorussie,by
+78,Belize,bz
+79,Benin,bj
+80,Bermudes (Les),bm
+81,Bhoutan,bt
+82,Bolivie,bo
+83,Bosnie-Herzégovine,ba
+84,Botswana,bw
+85,Bouvet (Îles),bv
+86,Territoire britannique de l'océan Indien,io
+87,Vierges britanniques (Îles),vg
+88,Brunei,bn
+89,Burkina Faso,bf
+90,Burundi,bi
+91,Cambodge,kh
+92,Cameroun,cm
+93,Cap Vert,cv
+94,Cayman (Îles),ky
+95,République centrafricaine,cf
+96,Tchad,td
+97,Christmas (Île),cx
+98,Cocos (Îles),cc
+99,Comores,km
+100,Rép. Dém. du Congo,cg
+101,Cook (Îles),ck
+102,Cuba,cu
+103,Chypre,cy
+104,Djibouti,dj
+105,Dominique,dm
+106,République Dominicaine,do
+107,Timor,tp
+108,Guinée Equatoriale,gq
+109,Érythrée,er
+110,Estonie,ee
+111,Ethiopie,et
+112,Falkland (Île),fk
+113,Féroé (Îles),fo
+114,Fidji (République des),fj
+115,Guyane française,gf
+116,Polynésie française,pf
+117,Territoires français du sud,tf
+118,Gabon,ga
+119,Gambie,gm
+120,Géorgie,ge
+121,Ghana,gh
+122,Gibraltar,gi
+123,Groenland,gl
+124,Grenade,gd
+125,Guadeloupe,gp
+126,Guam,gu
+127,Guatemala,gt
+128,Guinée,gn
+129,Guinée-Bissau,gw
+130,Guyane,gy
+131,Haïti,ht
+132,Heard et McDonald (Îles),hm
+133,Honduras,hn
+134,Islande,is
+135,Iran,ir
+136,Irak,iq
+137,Côte d'Ivoire,ci
+138,Jamaïque,jm
+139,Kazakhstan,kz
+140,Kenya,ke
+141,Kiribati,ki
+142,Corée du Nord,kp
+143,Koweit,kw
+144,Kirghizistan,kg
+145,Laos,la
+146,Lettonie,lv
+147,Lesotho,ls
+148,Libéria,lr
+149,Libye,ly
+150,Liechtenstein,li
+151,Lithuanie,lt
+152,Luxembourg,lu
+153,Macau,mo
+154,Macédoine,mk
+155,Madagascar,mg
+156,Malawi,mw
+157,Maldives (Îles),mv
+158,Mali,ml
+159,Malte,mt
+160,Marshall (Îles),mh
+161,Martinique,mq
+162,Mauritanie,mr
+163,Maurice,mu
+164,Mayotte,yt
+165,Micronésie (États fédérés de),fm
+166,Moldavie,md
+167,Monaco,mc
+168,Mongolie,mn
+169,Montserrat,ms
+170,Mozambique,mz
+171,Myanmar,mm
+172,Namibie,na
+173,Nauru,nr
+174,Nepal,np
+175,Antilles néerlandaises,an
+176,Nouvelle Calédonie,nc
+177,Nicaragua,ni
+178,Niger,ne
+179,Nigeria,ng
+180,Niue,nu
+181,Norfolk (Îles),nf
+182,Mariannes du Nord (Îles),mp
+183,Oman,om
+184,Palau,pw
+185,Panama,pa
+186,Papouasie-Nouvelle-Guinée,pg
+187,Paraguay,py
+188,Pitcairn (Îles),pn
+189,Qatar,qa
+190,Réunion (La),re
+191,Rwanda,rw
+192,Géorgie du Sud et Sandwich du Sud (Îles),gs
+193,Saint-Kitts et Nevis,kn
+194,Sainte Lucie,lc
+195,Saint Vincent et les Grenadines,vc
+196,Samoa,ws
+197,Saint-Marin (Rép. de),sm
+198,São Tomé et Príncipe (Rép.),st
+199,Sénégal,sn
+200,Seychelles,sc
+201,Sierra Leone,sl
+202,Slovaquie,sk
+203,Slovénie,si
+204,Somalie,so
+205,Sri Lanka,lk
+206,Sainte Hélène,sh
+207,Saint Pierre et Miquelon,pm
+208,Soudan,sd
+209,Suriname,sr
+210,Svalbard et Jan Mayen (Îles),sj
+211,Swaziland,sz
+212,Syrie,sy
+213,Tadjikistan,tj
+214,Tanzanie,tz
+215,Togo,tg
+216,Tokelau,tk
+217,Tonga,to
+218,Trinité et Tobago,tt
+219,Tunisie,tn
+220,Turkménistan,tm
+221,Turks et Caïques (Îles),tc
+222,Tuvalu,tv
+223,Îles Mineures Éloignées des États-Unis,um
+224,Ouganda,ug
+225,Uruguay,uy
+226,Ouzbékistan,uz
+227,Vanuatu,vu
+228,Vatican (Etat du),va
+229,Vietnam,vn
+230,Vierges (Îles),vi
+231,Wallis et Futuna (Îles),wf
+232,Sahara Occidental,eh
+233,Yemen,ye
+234,Zaïre,zr
+235,Zambie,zm
+236,Zimbabwe,zw
+237,La Barbad,bb
+238,tu es foutu,'); DROP TABLE pays; --
+239,et là aussi tu es foutu,"); DROP TABLE pays; --
+240,'); DROP TABLE pays; -- tu es foutu,tf
+241,"); DROP TABLE pays; -- et là aussi tu es foutu,tr

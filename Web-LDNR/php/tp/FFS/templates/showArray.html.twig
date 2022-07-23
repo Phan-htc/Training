@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+{% block title %}
+tableau des pays
+{% endblock %}
+
+{% block main %}
+
+{{ errors }}
+<h1>Tableau des pays</h1>
+<table class="alt3">
+{% for res in results %}
+  {% if loop.first %}
+  <tr><th>id</th><th>nom</th><th>code</th><th>Drapeau</th></tr>
+  {% endif %}
+  <tr><td>{{res.id}}</td><td>{{res.nom}}</td><td>{{res.code}}</td><td><img style="width:4rem" src="/flags/flags/{{res.flag}}"/></td></tr>
+{% endfor %}
+</table>
+
+{% endblock %}

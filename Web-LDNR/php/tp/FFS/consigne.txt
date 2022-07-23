@@ -1,0 +1,47 @@
+Objectif : créer via le framework symfony un système permettant :
+d'alimenter une base de données contenant les informations suivantes relatives à tous les pays du monde. Ces informations sont :
+un identifiant,
+le nom complet du pays en toutes lettres,
+le nom abrégé du pays en deux ou trois lettres,
+le nom du fichier contenant l'image du drapeau de chaque pays, celui-ci pouvant être aux formats suivants : SVG, PNG et JPEG.
+La table contenant ces informations se nommera pays et sera placée dans la base de données tp_symfony.
+Pour alimenter cette table pays nous disposons :
+d'un fichier CSV pays.csv ici présent contenant les champs suivants (cités en première ligne du fichier) :
+l'identifiant nommé id,
+le nom nommé nom,
+le nom abrégé nommé code.
+d'un répertoire compressé au format zip dans le fichier flags.zip ici présent et contenant les images des drapeaux de la plupart des 
+pays dans des fichiers nommées flags/code.svg, le champ code correspondant au nom abrégé du pays concerné.
+À partir de la base de données ainsi créée, un utilisateur pourra :
+afficher les caractéristiques d'un ou plusieurs pays à partir de l'un des critères présents en base de données,
+modifier les caractéristiques d'un pays particulier,
+récupérer l'intégralité des données.
+Pour cela il est demandé de fournir les interfaces utilisateur suivantes :
+une page d'accueil qui présentera des liens permettant d'accéder aux actions possibles :
+remplissage initial de la base de données,
+consultation de la base de données,
+modification de la base de données,
+sauvegarde de la base de données et des fichiers images,
+Le remplissage sera tel que :
+il exigera d'être authentifié avec le rôle ADMIN, ceci entraîne la nécessité de la mise en place de l'authentification, la méthode retenue 
+ici sera via un formulaire avec utilisateurs en base de données.
+les drapeaux seront placés dans le répertoire datas/drapeaux situé à la racine du projet,
+la classe choisie pour la table pays sera \App\entity\Pays.
+La consultation ne nécessitera pas d'authentification, elle se fera à l'aide d'un formulaire permettant la saisie du critère de sélection qui sera exprimé :
+soit par une expression régulière appliquée au nom ou au code du pays,
+soit par une liste déroulante présentant tous les noms de pays et permettant un choix unique,
+Le résultat sera un tableau indiquant pour chaque pays les éléments suivants :
+L'identifiant sous forme de lien permettant la modification du pays visé,
+le nom complet du pays,
+le code du pays,
+le drapeau du pays,
+La modification sera telle que :
+elle exige d'être authentifié avec le rôle MANAGE,
+le lien de la page précédente mènera alors à la modification des données présentes via un formulaire pré rempli avec les informations actuelles : 
+nom, code et drapeau.
+En cas de modification du fichier image du drapeau l'ancien fichier sera détruit par souci de cohérence,
+La sauvegarde sera telle que :
+elle exige d'être authentifié avec le rôle ADMIN,
+elle présente un lien assurant l'extraction d'un fichier au format CSV contenant la table pays,
+elle présente un lien assurant l'extraction d'un fichier au format ZIP contenant l'ensemble des images des drapeaux,
+L'utilisation d'une vue de type layout est exigée, celle-ci permettra systématiquement l'authentification si non authentifié et la déconnexion dans le cas contraire.
