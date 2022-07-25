@@ -1,6 +1,6 @@
 <?php
     //intégrer le script de chargement de classe présent dans l'arborescence du projet sous vendor/autoload.php,
-    require_once (__DIR__.'/le_projet/vendor/autoload.php');
+    require_once (__DIR__.'/FFS/vendor/autoload.php');
 
     //suite à cette inclusion afficher le chemin de recherche des fichiers,
     //printf('<p>%s</p>\n', htmlspecialchars(get_include_path()));
