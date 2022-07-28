@@ -8,6 +8,7 @@ class ComposerStaticInite5e679224ac661b0d68ff63b6b89cd36
 {
     public static $files = array (
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
+        '5f0e95b8df5acf4a92c896dc3ac4bb6e' => __DIR__ . '/..' . '/phpmetrics/phpmetrics/src/functions.php',
         'ec07570ca5a812141189b1fa81503674' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Assert/Functions.php',
     );
 
@@ -26,8 +27,13 @@ class ComposerStaticInite5e679224ac661b0d68ff63b6b89cd36
         ),
         'P' => 
         array (
+            'Psr\\Log\\' => 8,
             'Prophecy\\' => 9,
             'PhpParser\\' => 10,
+        ),
+        'M' => 
+        array (
+            'Michelf\\' => 8,
         ),
         'D' => 
         array (
@@ -51,6 +57,10 @@ class ComposerStaticInite5e679224ac661b0d68ff63b6b89cd36
         array (
             0 => __DIR__ . '/../..' . '/classes',
         ),
+        'Psr\\Log\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/log/Psr/Log',
+        ),
         'Prophecy\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpspec/prophecy/src/Prophecy',
@@ -59,6 +69,10 @@ class ComposerStaticInite5e679224ac661b0d68ff63b6b89cd36
         array (
             0 => __DIR__ . '/..' . '/nikic/php-parser/lib/PhpParser',
         ),
+        'Michelf\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/michelf/php-markdown/Michelf',
+        ),
         'Doctrine\\Instantiator\\' => 
         array (
             0 => __DIR__ . '/..' . '/doctrine/instantiator/src/Doctrine/Instantiator',
@@ -66,6 +80,16 @@ class ComposerStaticInite5e679224ac661b0d68ff63b6b89cd36
         'DeepCopy\\' => 
         array (
             0 => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy',
+        ),
+    );
+
+    public static $prefixesPsr0 = array (
+        'H' => 
+        array (
+            'Hal\\' => 
+            array (
+                0 => __DIR__ . '/..' . '/phpmetrics/phpmetrics/src',
+            ),
         ),
     );
 
@@ -701,6 +725,7 @@ class ComposerStaticInite5e679224ac661b0d68ff63b6b89cd36
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInite5e679224ac661b0d68ff63b6b89cd36::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInite5e679224ac661b0d68ff63b6b89cd36::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInite5e679224ac661b0d68ff63b6b89cd36::$prefixesPsr0;
             $loader->classMap = ComposerStaticInite5e679224ac661b0d68ff63b6b89cd36::$classMap;
 
         }, null, ClassLoader::class);

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="/var/www/html/Training/Web-LDNR/tp_tests/tests" tests="32" assertions="26" errors="11" warnings="1" failures="1" skipped="0" time="0.017450">
+    <testsuite name="Tests\FileLoggerTest" file="/var/www/html/Training/Web-LDNR/tp_tests/tests/FileLoggerTest.php" tests="9" assertions="1" errors="8" warnings="0" failures="0" skipped="0" time="0.008565">
+      <testcase name="testFileCreated" class="Tests\FileLoggerTest" classname="Tests.FileLoggerTest" file="/var/www/html/Training/Web-LDNR/tp_tests/tests/FileLoggerTest.php" line="13" assertions="1" time="0.002793"/>
+      <testsuite name="Tests\FileLoggerTest::testLevel" tests="8" assertions="0" errors="8" warnings="0" failures="0" skipped="0" time="0.005772">
+        <testcase name="testLevel with data set #0" class="Tests\FileLoggerTest" classname="Tests.FileLoggerTest" file="/var/www/html/Training/Web-LDNR/tp_tests/tests/FileLoggerTest.php" line="39" assertions="0" time="0.000830">
+          <error type="PHPUnit\Framework\Error\Notice">Tests\FileLoggerTest::testLevel with data set #0 ('emergency', 'Hello', '[emergency] Hello\n')
+Undefined variable: loglevel
+
+/var/www/html/Training/Web-LDNR/tp_tests/classes/FileLogger.php:21
+/var/www/html/Training/Web-LDNR/tp_tests/tests/FileLoggerTest.php:42
+phpvfscomposer:///var/www/html/Training/Web-LDNR/tp_tests/vendor/phpunit/phpunit/phpunit:97</error>
+        </testcase>
+        <testcase name="testLevel with data set #1" class="Tests\FileLoggerTest" classname="Tests.FileLoggerTest" file="/var/www/html/Training/Web-LDNR/tp_tests/tests/FileLoggerTest.php" line="39" assertions="0" time="0.000786">
+          <error type="PHPUnit\Framework\Error\Notice">Tests\FileLoggerTest::testLevel with data set #1 ('alert', 'Hello', '[alert    ] Hello\n')
+Undefined variable: loglevel
+
+/var/www/html/Training/Web-LDNR/tp_tests/classes/FileLogger.php:21
+/var/www/html/Training/Web-LDNR/tp_tests/tests/FileLoggerTest.php:42
+phpvfscomposer:///var/www/html/Training/Web-LDNR/tp_tests/vendor/phpunit/phpunit/phpunit:97</error>
+        </testcase>
+        <testcase name="testLevel with data set #2" class="Tests\FileLoggerTest" classname="Tests.FileLoggerTest" file="/var/www/html/Training/Web-LDNR/tp_tests/tests/FileLoggerTest.php" line="39" assertions="0" time="0.000846">
+          <error type="PHPUnit\Framework\Error\Notice">Tests\FileLoggerTest::testLevel with data set #2 ('critical', 'Hello', '[critical ] Hello\n')
+Undefined variable: loglevel
+
+/var/www/html/Training/Web-LDNR/tp_tests/classes/FileLogger.php:21
+/var/www/html/Training/Web-LDNR/tp_tests/tests/FileLoggerTest.php:42
+phpvfscomposer:///var/www/html/Training/Web-LDNR/tp_tests/vendor/phpunit/phpunit/phpunit:97</error>
+        </testcase>
+        <testcase name="testLevel with data set #3" class="Tests\FileLoggerTest" classname="Tests.FileLoggerTest" file="/var/www/html/Training/Web-LDNR/tp_tests/tests/FileLoggerTest.php" line="39" assertions="0" time="0.000725">
+          <error type="PHPUnit\Framework\Error\Notice">Tests\FileLoggerTest::testLevel with data set #3 ('error', 'Hello', '[error    ] Hello\n')
+Undefined variable: loglevel
+
+/var/www/html/Training/Web-LDNR/tp_tests/classes/FileLogger.php:21
+/var/www/html/Training/Web-LDNR/tp_tests/tests/FileLoggerTest.php:42
+phpvfscomposer:///var/www/html/Training/Web-LDNR/tp_tests/vendor/phpunit/phpunit/phpunit:97</error>
+        </testcase>
+        <testcase name="testLevel with data set #4" class="Tests\FileLoggerTest" classname="Tests.FileLoggerTest" file="/var/www/html/Training/Web-LDNR/tp_tests/tests/FileLoggerTest.php" line="39" assertions="0" time="0.000759">
+          <error type="PHPUnit\Framework\Error\Notice">Tests\FileLoggerTest::testLevel with data set #4 ('warning', 'Hello', '[warning  ] Hello\n')
+Undefined variable: loglevel
+
+/var/www/html/Training/Web-LDNR/tp_tests/classes/FileLogger.php:21
+/var/www/html/Training/Web-LDNR/tp_tests/tests/FileLoggerTest.php:42
+phpvfscomposer:///var/www/html/Training/Web-LDNR/tp_tests/vendor/phpunit/phpunit/phpunit:97</error>
+        </testcase>
+        <testcase name="testLevel with data set #5" class="Tests\FileLoggerTest" classname="Tests.FileLoggerTest" file="/var/www/html/Training/Web-LDNR/tp_tests/tests/FileLoggerTest.php" line="39" assertions="0" time="0.000572">
+          <error type="PHPUnit\Framework\Error\Notice">Tests\FileLoggerTest::testLevel with data set #5 ('notice', 'Hello', '[notice   ] Hello\n')
+Undefined variable: loglevel
+
+/var/www/html/Training/Web-LDNR/tp_tests/classes/FileLogger.php:21
+/var/www/html/Training/Web-LDNR/tp_tests/tests/FileLoggerTest.php:42
+phpvfscomposer:///var/www/html/Training/Web-LDNR/tp_tests/vendor/phpunit/phpunit/phpunit:97</error>
+        </testcase>
+        <testcase name="testLevel with data set #6" class="Tests\FileLoggerTest" classname="Tests.FileLoggerTest" file="/var/www/html/Training/Web-LDNR/tp_tests/tests/FileLoggerTest.php" line="39" assertions="0" time="0.000525">
+          <error type="PHPUnit\Framework\Error\Notice">Tests\FileLoggerTest::testLevel with data set #6 ('info', 'Hello', '[info     ] Hello\n')
+Undefined variable: loglevel
+
+/var/www/html/Training/Web-LDNR/tp_tests/classes/FileLogger.php:21
+/var/www/html/Training/Web-LDNR/tp_tests/tests/FileLoggerTest.php:42
+phpvfscomposer:///var/www/html/Training/Web-LDNR/tp_tests/vendor/phpunit/phpunit/phpunit:97</error>
+        </testcase>
+        <testcase name="testLevel with data set #7" class="Tests\FileLoggerTest" classname="Tests.FileLoggerTest" file="/var/www/html/Training/Web-LDNR/tp_tests/tests/FileLoggerTest.php" line="39" assertions="0" time="0.000730">
+          <error type="PHPUnit\Framework\Error\Notice">Tests\FileLoggerTest::testLevel with data set #7 ('debug', 'Hello', '[debug    ] Hello\n')
+Undefined variable: loglevel
+
+/var/www/html/Training/Web-LDNR/tp_tests/classes/FileLogger.php:21
+/var/www/html/Training/Web-LDNR/tp_tests/tests/FileLoggerTest.php:42
+phpvfscomposer:///var/www/html/Training/Web-LDNR/tp_tests/vendor/phpunit/phpunit/phpunit:97</error>
+        </testcase>
+      </testsuite>
+    </testsuite>
+    <testsuite name="MarkdownTest" file="/var/www/html/Training/Web-LDNR/tp_tests/tests/MarkdownTest.php" tests="1" assertions="0" errors="0" warnings="1" failures="0" skipped="0" time="0.001408">
+      <testcase name="Warning" assertions="0" time="0.001408">
+        <warning type="PHPUnit\Framework\Warning">Warning
+No tests found in class "MarkdownTest".
+
+phpvfscomposer:///var/www/html/Training/Web-LDNR/tp_tests/vendor/phpunit/phpunit/phpunit:97</warning>
+      </testcase>
+    </testsuite>
+    <testsuite name="MathTest" file="/var/www/html/Training/Web-LDNR/tp_tests/tests/MathTest.php" tests="6" assertions="6" errors="3" warnings="0" failures="1" skipped="0" time="0.004558">
+      <testcase name="testMaximum" class="MathTest" classname="MathTest" file="/var/www/html/Training/Web-LDNR/tp_tests/tests/MathTest.php" line="7" assertions="4" time="0.001069"/>
+      <testcase name="testAnswer" class="MathTest" classname="MathTest" file="/var/www/html/Training/Web-LDNR/tp_tests/tests/MathTest.php" line="15" assertions="1" time="0.000099"/>
+      <testcase name="testToBase2" class="MathTest" classname="MathTest" file="/var/www/html/Training/Web-LDNR/tp_tests/tests/MathTest.php" line="19" assertions="0" time="0.000602">
+        <error type="PHPUnit\Framework\Error\Notice">MathTest::testToBase2
+Undefined variable: resTB2
+
+/var/www/html/Training/Web-LDNR/tp_tests/classes/Math.php:22
+/var/www/html/Training/Web-LDNR/tp_tests/tests/MathTest.php:20
+phpvfscomposer:///var/www/html/Training/Web-LDNR/tp_tests/vendor/phpunit/phpunit/phpunit:97</error>
+      </testcase>
+      <testcase name="testMultiplyBy2" class="MathTest" classname="MathTest" file="/var/www/html/Training/Web-LDNR/tp_tests/tests/MathTest.php" line="27" assertions="1" time="0.001650">
+        <failure type="PHPUnit\Framework\ExpectationFailedException">MathTest::testMultiplyBy2
+Failed asserting that false matches expected 2.
+
+/var/www/html/Training/Web-LDNR/tp_tests/tests/MathTest.php:28
+phpvfscomposer:///var/www/html/Training/Web-LDNR/tp_tests/vendor/phpunit/phpunit/phpunit:97</failure>
+      </testcase>
+      <testcase name="testUCFirst" class="MathTest" classname="MathTest" file="/var/www/html/Training/Web-LDNR/tp_tests/tests/MathTest.php" line="33" assertions="0" time="0.000698">
+        <error type="Error">MathTest::testUCFirst
+Error: Call to undefined method Tests\Math::UCFirst()
+
+/var/www/html/Training/Web-LDNR/tp_tests/tests/MathTest.php:34
+phpvfscomposer:///var/www/html/Training/Web-LDNR/tp_tests/vendor/phpunit/phpunit/phpunit:97</error>
+      </testcase>
+      <testcase name="testCasTresParticulier" class="MathTest" classname="MathTest" file="/var/www/html/Training/Web-LDNR/tp_tests/tests/MathTest.php" line="41" assertions="0" time="0.000439">
+        <error type="Error">MathTest::testCasTresParticulier
+Error: Call to undefined method MathTest::checkCasTresParticulier()
+
+/var/www/html/Training/Web-LDNR/tp_tests/tests/MathTest.php:42
+phpvfscomposer:///var/www/html/Training/Web-LDNR/tp_tests/vendor/phpunit/phpunit/phpunit:97</error>
+      </testcase>
+    </testsuite>
+    <testsuite name="Tests\PassTest" file="/var/www/html/Training/Web-LDNR/tp_tests/tests/PassTest.php" tests="2" assertions="2" errors="0" warnings="0" failures="0" skipped="0" time="0.000383">
+      <testsuite name="Tests\PassTest::testEstFort" tests="2" assertions="2" errors="0" warnings="0" failures="0" skipped="0" time="0.000383">
+        <testcase name="testEstFort with data set #0" class="Tests\PassTest" classname="Tests.PassTest" file="/var/www/html/Training/Web-LDNR/tp_tests/tests/PassTest.php" line="20" assertions="1" time="0.000295"/>
+        <testcase name="testEstFort with data set #1" class="Tests\PassTest" classname="Tests.PassTest" file="/var/www/html/Training/Web-LDNR/tp_tests/tests/PassTest.php" line="20" assertions="1" time="0.000088"/>
+      </testsuite>
+    </testsuite>
+    <testsuite name="PileTableauTest" file="/var/www/html/Training/Web-LDNR/tp_tests/tests/PileTableauTest.php" tests="14" assertions="17" errors="0" warnings="0" failures="0" skipped="0" time="0.002536">
+      <testcase name="testPileCreeeEstVide" class="PileTableauTest" classname="PileTableauTest" file="/var/www/html/Training/Web-LDNR/tp_tests/tests/PileTableauTest.php" line="9" assertions="1" time="0.000327"/>
+      <testcase name="testApresPushPilePlusVide" class="PileTableauTest" classname="PileTableauTest" file="/var/www/html/Training/Web-LDNR/tp_tests/tests/PileTableauTest.php" line="14" assertions="1" time="0.000157"/>
+      <testcase name="testPopSurPileVideLeveException" class="PileTableauTest" classname="PileTableauTest" file="/var/www/html/Training/Web-LDNR/tp_tests/tests/PileTableauTest.php" line="20" assertions="1" time="0.000497"/>
+      <testcase name="testHeadSurPileVideLeveException" class="PileTableauTest" classname="PileTableauTest" file="/var/www/html/Training/Web-LDNR/tp_tests/tests/PileTableauTest.php" line="26" assertions="1" time="0.000364"/>
+      <testcase name="testPopApresPushRendLaPileVide" class="PileTableauTest" classname="PileTableauTest" file="/var/www/html/Training/Web-LDNR/tp_tests/tests/PileTableauTest.php" line="32" assertions="1" time="0.000156"/>
+      <testcase name="testCanNotPopTwice" class="PileTableauTest" classname="PileTableauTest" file="/var/www/html/Training/Web-LDNR/tp_tests/tests/PileTableauTest.php" line="40" assertions="1" time="0.000331"/>
+      <testcase name="testCanHeadTwice" class="PileTableauTest" classname="PileTableauTest" file="/var/www/html/Training/Web-LDNR/tp_tests/tests/PileTableauTest.php" line="48" assertions="1" time="0.000124"/>
+      <testcase name="testPopReturnPushedValue" class="PileTableauTest" classname="PileTableauTest" file="/var/www/html/Training/Web-LDNR/tp_tests/tests/PileTableauTest.php" line="57" assertions="1" time="0.000101"/>
+      <testcase name="testTwoPushThenTwoPop" class="PileTableauTest" classname="PileTableauTest" file="/var/www/html/Training/Web-LDNR/tp_tests/tests/PileTableauTest.php" line="65" assertions="2" time="0.000115"/>
+      <testcase name="testHeadTwiceAfterPush" class="PileTableauTest" classname="PileTableauTest" file="/var/www/html/Training/Web-LDNR/tp_tests/tests/PileTableauTest.php" line="74" assertions="2" time="0.000078"/>
+      <testcase name="testHeadTwiceAfterTwoPush" class="PileTableauTest" classname="PileTableauTest" file="/var/www/html/Training/Web-LDNR/tp_tests/tests/PileTableauTest.php" line="82" assertions="2" time="0.000061"/>
+      <testcase name="testDebug" class="PileTableauTest" classname="PileTableauTest" file="/var/www/html/Training/Web-LDNR/tp_tests/tests/PileTableauTest.php" line="91" assertions="1" time="0.000062"/>
+      <testcase name="testDebug1" class="PileTableauTest" classname="PileTableauTest" file="/var/www/html/Training/Web-LDNR/tp_tests/tests/PileTableauTest.php" line="97" assertions="1" time="0.000092"/>
+      <testcase name="testDebug2" class="PileTableauTest" classname="PileTableauTest" file="/var/www/html/Training/Web-LDNR/tp_tests/tests/PileTableauTest.php" line="104" assertions="1" time="0.000071"/>
+    </testsuite>
+  </testsuite>
+</testsuites>

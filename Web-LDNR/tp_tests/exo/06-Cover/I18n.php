@@ -95,12 +95,14 @@ class I18n {
 					throw new \Exception("Error while reading json setup file") ;
 				
 				break ;
+				}
 			case "yml" :
 				$data = yaml_parse($content) ;
-				if ($data == false) 
+				if ($data == false){ 
 					throw new \Exception("Error while reading yaml setup file") ;
 				}
 				break ;
+			
 			default :
 				throw new \Exception("Extension not recognized as i18n file") ;
 		}

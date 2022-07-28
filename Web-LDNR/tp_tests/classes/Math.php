@@ -4,7 +4,7 @@ namespace Tests ;
 
 class Math
 {
-    public static function maximum($a, $b)
+    public static function maximum($variable_a, $variable_b)
     {
         return $variable_a > $variable_b ? $variable_a : $variable_b ;
     }
@@ -16,10 +16,10 @@ class Math
     public static function toBase2($value)
     {
         while ($value > 0) {
-            $res = ($value % 2) . $res ;
+            $resTB2 = ($value % 2) . $res ;
             $value = intdiv($value, 2) ;
         }
-        return $res ;
+        return $resTB2 ;
     }
     public static function multiplyByPowerOfTwo($a, $power)
     {
@@ -30,10 +30,27 @@ class Math
     }
     public static function numberOf($haystack, $needle)
     {
-        $res = 0 ;
+        $resNO = 0 ;
         foreach (str_split($haystack) as $digit) {
-            $res += ($digit = $needle) ;
+            $resNO += ($digit = $needle) ;
         }
-        return $res ;
+        return $resNO ;
+    }
+    public static function qualify($number)
+    {
+        $sum = 0 ;
+            for ($i = 1; $i < $number; $i++) {
+                if ($number % $i == 0) {
+                    $sum += $i ;
+                }
+        }
+
+        if ($sum < $number) {
+            echo "$number est deficient\n" ;
+        } elseif ($sum == $number) {
+            echo "$number est parfait\n" ;
+        } else {
+            echo "$number est abondant\n" ;
+        }
     }
 }

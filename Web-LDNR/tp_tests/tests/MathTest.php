@@ -38,6 +38,12 @@ class MathTest extends TestCase
 	    $this->assertEquals("Aa", Tests\Math::UCFirst("aa")) ;
 	    $this->assertEquals("Aa", Tests\Math::UCFirst("AA")) ;
     }
-
-
+    public function testCasTresParticulier() {
+        if (! $this->checkCasTresParticulier()) {
+            $this->markTestSkipped(
+                'The MySQLi extension is not available.'
+            );
+        }
+    }
+    
 }
