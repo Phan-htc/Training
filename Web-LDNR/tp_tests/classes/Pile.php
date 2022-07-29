@@ -1,7 +1,5 @@
 <?php
-
 namespace Tests ;
-
 /**
  * Implémentation d'une pile.
  *
@@ -10,13 +8,12 @@ namespace Tests ;
  * la dernière à y avoir été stockée (ou _Last In First Out_).
  */
 Interface Pile {
-
 	/**
 	 * Détermine si la pile est vide.
 	 *
 	 * @return Vrai si la pile est vide, faux sinon
 	 */
-	public function empty() ;
+	public function empty();
 	
 	/**
 	 * Ajoute un élément en haut de la pile

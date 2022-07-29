@@ -2,12 +2,8 @@
 
 namespace Tests ;
 
-/**
- * Fonctions sur les dates
- */
 class Date
 {
-	
 	/**
 	 * Vérifier si une année est bissextile
 	 * 
@@ -18,6 +14,7 @@ class Date
 	 */
 	public static function bissextile($annee) {
 		return $annee % 4 == 0 ;
+		echo " l'année est bissextile";
 	}
 	
 	/**
@@ -34,48 +31,19 @@ class Date
 	public static function lendemain($date) {
 		list($day, $month, $year) = explode("-", $date) ;
 		
-		switch($m) {
-			case '02' :
-				if ($day == '28') {
-					$day = '01' ;
-					$month = '03' ;
-				} else {
-					$day = sprintf("%2d", $day + 1) ;
-				}
-				break ;
+		switch($date) {
 			case '01' :
-			case '03' :
-			case '05' :
-			case '07' :
-			case '08' :
-			case '10' :
-				if ($day == '31') {
-					$day = '01' ;
+				if ($day !== '31') {
+					$day = sprintf("%02d", $day + 1) ;
+				} else {
 					$month = sprintf("%02d", $month + 1) ;
-				} else {
-					$day = sprintf("%02d", $day + 1) ;
-				}
-				break ;
-			case '12' :
-				if ($day == '31') {
-					$day = '01' ;
-					$month = '01' ;
-					$year = sprintf("%04d", $year + 1) ;
-				} else {
-					$day = sprintf("%02d", $day + 1) ;
 				}
 				break ;
 			default :
-				if ($day == '30') {
-					$day = '01' ;
-					$month = sprintf("%02d", $month + 1) ;
-				} else {
-					$day = sprintf("%02d", $day + 1) ;
-				}
-				break ;
-		}
-		
+					$day = sprintf("%02d", $day = 1) ;
+					$month = sprintf("%02d", $month = 1) ;
+					$year = sprintf("%04d", $year + 1) ;
+		}		
 		return "$day-$month-$year" ;
-	}
-	
+	}	
 }

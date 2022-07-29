@@ -16,7 +16,7 @@ class Math
     public static function toBase2($value)
     {
         while ($value > 0) {
-            $resTB2 = ($value % 2) . $res ;
+            $resTB2 = ($value % 2) . $value ;
             $value = intdiv($value, 2) ;
         }
         return $resTB2 ;
